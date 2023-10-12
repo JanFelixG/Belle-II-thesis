@@ -13,11 +13,13 @@ bin-release/
 *.ipa
 *.apk
 
+#vivado files here
 *.dcp
+*.xdbg
+
 #checkpoints
 *.xci(www.spiritconsortium.org)
 *.xci
-*.dcp(checkpoint files)
 *.dcp
 *.vds
 *.pb
