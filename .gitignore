@@ -13,6 +13,36 @@ bin-release/
 *.ipa
 *.apk
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+*.dcp
+#checkpoints
+*.xci(www.spiritconsortium.org)
+*.xci
+*.dcp(checkpoint files)
+*.dcp
+*.vds
+*.pb
+#All bd comments and layout coordinates are stored within .ui
+*.ui
+*.ooc
+#System Generator
+*.mdl
+*.slx
+*.bxml
+#Simulation logic analyzer
+*.wcfg
+*.coe
+#MIG
+*.prj
+*.mem
+*.jou
+#Reports
+*.rpt
+*.txt
+*.vdi
+#C-files
+*.c
+*.h
+*.elf
+*.bmm
+*.xmp
+
