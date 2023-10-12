@@ -1,0 +1,1287 @@
+
+*** Running vivado
+    with args -log myproject.vdi -applog -m64 -stack 2000 -product Vivado -messageDb vivado.pb -mode batch -source myproject.tcl -notrace
+
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+
+****** Vivado v2022.2.2 (64-bit)
+  **** SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+  **** IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+    ** Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
+
+source myproject.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 4343.520 ; gain = 96.055 ; free physical = 35697 ; free virtual = 260299
+Command: link_design -top myproject -part xcvu160-flgb2104-2-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xcvu160-flgb2104-2-e
+Netlist sorting complete. Time (s): cpu = 00:00:00.46 ; elapsed = 00:00:00.47 . Memory (MB): peak = 5368.707 ; gain = 0.000 ; free physical = 33132 ; free virtual = 259306
+INFO: [Netlist 29-17] Analyzing 7590 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 191 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ubhks/masterarbeit_ubhks/git_work/neural_test2/neural_test2.srcs/constrs_1/new/cons1.xdc]
+Finished Parsing XDC File [/home/ubhks/masterarbeit_ubhks/git_work/neural_test2/neural_test2.srcs/constrs_1/new/cons1.xdc]
+Parsing XDC File [/home/ubhks/masterarbeit_ubhks/git_work/neural_test2/neural_test2.srcs/constrs_1/new/timing.xdc]
+Finished Parsing XDC File [/home/ubhks/masterarbeit_ubhks/git_work/neural_test2/neural_test2.srcs/constrs_1/new/timing.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5919.773 ; gain = 0.000 ; free physical = 7492 ; free virtual = 258674
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1679 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 1419 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 260 instances
+
+7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:03:43 ; elapsed = 00:03:45 . Memory (MB): peak = 5919.773 ; gain = 1572.254 ; free physical = 7389 ; free virtual = 258617
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu160'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu160'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 5994.777 ; gain = 67.000 ; free physical = 7003 ; free virtual = 258513
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 120f310aa
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:21 . Memory (MB): peak = 6881.238 ; gain = 886.461 ; free physical = 4802 ; free virtual = 258056
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-1287] Pulled Inverter acc_10_V_reg_4494957[15]_i_132 into driver instance acc_25_V_reg_4495272[7]_i_61, which resulted in an inversion of 3 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_14_V_reg_1398871[11]_i_47 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_498_reg_1398961[7]_i_18, which resulted in an inversion of 65 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_14_V_reg_1398871[11]_i_48 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_498_reg_1398961[7]_i_19, which resulted in an inversion of 31 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_14_V_reg_1398871[11]_i_49 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_498_reg_1398961[7]_i_22, which resulted in an inversion of 31 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_14_V_reg_1398871[11]_i_50 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_498_reg_1398961[7]_i_25, which resulted in an inversion of 31 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_14_V_reg_1398871[11]_i_51 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_498_reg_1398961[7]_i_28, which resulted in an inversion of 37 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_14_V_reg_1398871[11]_i_52 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_498_reg_1398961[7]_i_39, which resulted in an inversion of 28 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_14_V_reg_1398871[11]_i_74 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_64_reg_1398731[7]_i_18, which resulted in an inversion of 17 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_14_V_reg_1398871[11]_i_75 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_64_reg_1398731[7]_i_20, which resulted in an inversion of 15 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_14_V_reg_1398871[11]_i_76 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_64_reg_1398731[7]_i_22, which resulted in an inversion of 16 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_14_V_reg_1398871[11]_i_77 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_64_reg_1398731[7]_i_24, which resulted in an inversion of 16 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_14_V_reg_1398871[11]_i_78 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_498_reg_1398961[7]_i_33, which resulted in an inversion of 17 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_14_V_reg_1398871[11]_i_87 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_491_reg_1398956[7]_i_22, which resulted in an inversion of 15 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_14_V_reg_1398871[11]_i_88 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_491_reg_1398956[7]_i_25, which resulted in an inversion of 16 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_14_V_reg_1398871[11]_i_89 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_491_reg_1398956[7]_i_28, which resulted in an inversion of 16 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_14_V_reg_1398871[7]_i_31 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_98_reg_1398741[7]_i_53, which resulted in an inversion of 40 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_14_V_reg_1398871[7]_i_32 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_98_reg_1398741[7]_i_54, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_14_V_reg_1398871[7]_i_33 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_98_reg_1398741[7]_i_55, which resulted in an inversion of 20 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_14_V_reg_1398871[7]_i_35 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_98_reg_1398741[7]_i_57, which resulted in an inversion of 22 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_14_V_reg_1398871[7]_i_56 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_98_reg_1398741[7]_i_43, which resulted in an inversion of 14 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_14_V_reg_1398871[7]_i_75 into driver instance acc_3_V_reg_1398736[15]_i_171, which resulted in an inversion of 12 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_14_V_reg_1398871[7]_i_76 into driver instance acc_3_V_reg_1398736[15]_i_170, which resulted in an inversion of 14 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_14_V_reg_1398871[7]_i_79 into driver instance acc_3_V_reg_1398736[15]_i_175, which resulted in an inversion of 15 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_15_V_reg_4495072[15]_i_1035 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_1303_reg_4495192[7]_i_34, which resulted in an inversion of 6 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_15_V_reg_4495072[15]_i_1036 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_1303_reg_4495192[7]_i_22, which resulted in an inversion of 8 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_15_V_reg_4495072[15]_i_1037 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_1303_reg_4495192[7]_i_25, which resulted in an inversion of 7 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_15_V_reg_4495072[15]_i_1038 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_1303_reg_4495192[7]_i_28, which resulted in an inversion of 10 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_15_V_reg_4495072[15]_i_1039 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_1303_reg_4495192[7]_i_30, which resulted in an inversion of 12 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_15_V_reg_4495072[15]_i_277 into driver instance acc_25_V_reg_4495272[12]_i_39, which resulted in an inversion of 27 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_15_V_reg_4495072[15]_i_526 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_943_reg_4495062[7]_i_22, which resulted in an inversion of 9 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_15_V_reg_4495072[15]_i_707 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_1391_reg_4495227[7]_i_18, which resulted in an inversion of 82 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_15_V_reg_4495072[15]_i_924 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_1040_reg_4495087[15]_i_128, which resulted in an inversion of 5 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_15_V_reg_4495072[15]_i_928 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_1040_reg_4495087[15]_i_129, which resulted in an inversion of 5 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_15_V_reg_4495072[15]_i_929 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_1040_reg_4495087[15]_i_130, which resulted in an inversion of 5 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_18_V_reg_4495127[15]_i_351 into driver instance acc_18_V_reg_4495127[15]_i_448, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_1_V_reg_1398716[10]_i_73 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_659_reg_1399046[7]_i_28, which resulted in an inversion of 18 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_25_V_reg_4495272[12]_i_100 into driver instance add_ln703_1291_reg_4495182[15]_i_115, which resulted in an inversion of 13 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_25_V_reg_4495272[12]_i_120 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/acc_10_V_reg_4494957[15]_i_104, which resulted in an inversion of 16 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_25_V_reg_4495272[12]_i_121 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_616_reg_4494927[14]_i_123, which resulted in an inversion of 12 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_25_V_reg_4495272[12]_i_122 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/acc_10_V_reg_4494957[7]_i_91, which resulted in an inversion of 14 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_25_V_reg_4495272[12]_i_123 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/acc_10_V_reg_4494957[7]_i_63, which resulted in an inversion of 15 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_25_V_reg_4495272[12]_i_124 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/acc_10_V_reg_4494957[7]_i_48, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_25_V_reg_4495272[12]_i_163 into driver instance add_ln703_928_reg_4495057[7]_i_49, which resulted in an inversion of 12 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_25_V_reg_4495272[12]_i_164 into driver instance add_ln703_928_reg_4495057[7]_i_50, which resulted in an inversion of 11 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_25_V_reg_4495272[12]_i_165 into driver instance add_ln703_928_reg_4495057[7]_i_51, which resulted in an inversion of 13 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_25_V_reg_4495272[12]_i_166 into driver instance add_ln703_928_reg_4495057[7]_i_52, which resulted in an inversion of 12 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_25_V_reg_4495272[12]_i_167 into driver instance add_ln703_928_reg_4495057[7]_i_53, which resulted in an inversion of 14 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_25_V_reg_4495272[12]_i_176 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/acc_10_V_reg_4494957[7]_i_74, which resulted in an inversion of 19 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_25_V_reg_4495272[12]_i_185 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_958_reg_4495067[7]_i_18, which resulted in an inversion of 36 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_25_V_reg_4495272[12]_i_186 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_958_reg_4495067[7]_i_21, which resulted in an inversion of 39 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_25_V_reg_4495272[12]_i_189 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_958_reg_4495067[7]_i_32, which resulted in an inversion of 19 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_25_V_reg_4495272[12]_i_68 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_1391_reg_4495227[7]_i_44, which resulted in an inversion of 49 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_29_V_reg_4495352[12]_i_159 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_579_reg_4494907[15]_i_113, which resulted in an inversion of 14 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_29_V_reg_4495352[12]_i_170 into driver instance acc_29_V_reg_4495352[12]_i_260, which resulted in an inversion of 13 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_29_V_reg_4495352[12]_i_171 into driver instance acc_29_V_reg_4495352[12]_i_261, which resulted in an inversion of 15 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_29_V_reg_4495352[12]_i_172 into driver instance acc_29_V_reg_4495352[12]_i_262, which resulted in an inversion of 12 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_29_V_reg_4495352[12]_i_173 into driver instance acc_29_V_reg_4495352[12]_i_263, which resulted in an inversion of 15 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_29_V_reg_4495352[12]_i_174 into driver instance acc_29_V_reg_4495352[12]_i_264, which resulted in an inversion of 19 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_29_V_reg_4495352[12]_i_251 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_628_reg_4494932[15]_i_119, which resulted in an inversion of 28 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_29_V_reg_4495352[12]_i_294 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_431_reg_4494837[15]_i_18, which resulted in an inversion of 23 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_29_V_reg_4495352[12]_i_90 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_301_reg_4494772[15]_i_89, which resulted in an inversion of 24 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_29_V_reg_4495352[12]_i_91 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_301_reg_4494772[15]_i_90, which resulted in an inversion of 29 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_29_V_reg_4495352[12]_i_94 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_301_reg_4494772[15]_i_93, which resulted in an inversion of 32 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_3_V_reg_1398736[15]_i_299 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_498_reg_1398961[14]_i_21, which resulted in an inversion of 15 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_3_V_reg_1398736[15]_i_300 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_498_reg_1398961[14]_i_23, which resulted in an inversion of 17 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_3_V_reg_1398736[15]_i_301 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_498_reg_1398961[7]_i_43, which resulted in an inversion of 15 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_3_V_reg_1398736[15]_i_303 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_498_reg_1398961[7]_i_44, which resulted in an inversion of 10 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_3_V_reg_1398736[15]_i_304 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_498_reg_1398961[7]_i_32, which resulted in an inversion of 8 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_6_V_reg_1398771[7]_i_49 into driver instance acc_6_V_reg_1398771[7]_i_82, which resulted in an inversion of 3 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_6_V_reg_1398771[7]_i_50 into driver instance acc_6_V_reg_1398771[7]_i_83, which resulted in an inversion of 3 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_6_V_reg_1398771[7]_i_53 into driver instance acc_6_V_reg_1398771[7]_i_84, which resulted in an inversion of 3 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_8_V_reg_1398791[10]_i_18 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_378_reg_1398901[15]_i_33, which resulted in an inversion of 28 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_8_V_reg_1398791[7]_i_102 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_109_reg_1398751[14]_i_62, which resulted in an inversion of 9 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_8_V_reg_1398791[7]_i_62 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/acc_3_V_reg_1398736[7]_i_19, which resulted in an inversion of 23 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_8_V_reg_1398791[7]_i_63 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/acc_3_V_reg_1398736[15]_i_54, which resulted in an inversion of 23 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_8_V_reg_1398791[7]_i_64 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/acc_3_V_reg_1398736[7]_i_23, which resulted in an inversion of 24 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_8_V_reg_1398791[7]_i_65 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/acc_3_V_reg_1398736[7]_i_34, which resulted in an inversion of 22 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_8_V_reg_1398791[7]_i_66 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/acc_3_V_reg_1398736[7]_i_28, which resulted in an inversion of 24 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_8_V_reg_1398791[7]_i_98 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_109_reg_1398751[14]_i_64, which resulted in an inversion of 10 pins
+INFO: [Opt 31-1287] Pulled Inverter acc_8_V_reg_1398791[7]_i_99 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_109_reg_1398751[14]_i_60, which resulted in an inversion of 11 pins
+INFO: [Opt 31-1287] Pulled Inverter add_ln703_1085_reg_4495102[15]_i_257 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_1591_reg_4495312[15]_i_85, which resulted in an inversion of 32 pins
+INFO: [Opt 31-1287] Pulled Inverter add_ln703_1233_reg_4495157[15]_i_184 into driver instance add_ln703_604_reg_4494922[14]_i_58, which resulted in an inversion of 15 pins
+INFO: [Opt 31-1287] Pulled Inverter add_ln703_1233_reg_4495157[15]_i_186 into driver instance add_ln703_604_reg_4494922[14]_i_72, which resulted in an inversion of 12 pins
+INFO: [Opt 31-1287] Pulled Inverter add_ln703_1233_reg_4495157[15]_i_187 into driver instance add_ln703_604_reg_4494922[14]_i_73, which resulted in an inversion of 15 pins
+INFO: [Opt 31-1287] Pulled Inverter add_ln703_123_reg_1398756[15]_i_204 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/acc_8_V_reg_1398791[10]_i_12, which resulted in an inversion of 19 pins
+INFO: [Opt 31-1287] Pulled Inverter add_ln703_1351_reg_4495207[15]_i_209 into driver instance add_ln703_752_reg_4494967[13]_i_81, which resulted in an inversion of 5 pins
+INFO: [Opt 31-1287] Pulled Inverter add_ln703_13_reg_70472[15]_i_158 into driver instance grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config11_0_0_0_0_0_0_fu_207/add_ln703_40_reg_70497[15]_i_18, which resulted in an inversion of 12 pins
+INFO: [Opt 31-1287] Pulled Inverter add_ln703_1443_reg_4495247[15]_i_119 into driver instance add_ln703_267_reg_4494757[7]_i_42, which resulted in an inversion of 42 pins
+INFO: [Opt 31-1287] Pulled Inverter add_ln703_1443_reg_4495247[15]_i_120 into driver instance add_ln703_267_reg_4494757[7]_i_51, which resulted in an inversion of 27 pins
+INFO: [Opt 31-1287] Pulled Inverter add_ln703_1563_reg_4495302[15]_i_255 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_409_reg_4494822[7]_i_23, which resulted in an inversion of 5 pins
+INFO: [Opt 31-1287] Pulled Inverter add_ln703_16_reg_1398706[7]_i_70 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_58_reg_1398726[7]_i_18, which resulted in an inversion of 57 pins
+INFO: [Opt 31-1287] Pulled Inverter add_ln703_16_reg_1398706[7]_i_71 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_58_reg_1398726[7]_i_21, which resulted in an inversion of 28 pins
+INFO: [Opt 31-1287] Pulled Inverter add_ln703_16_reg_1398706[7]_i_72 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_58_reg_1398726[7]_i_23, which resulted in an inversion of 25 pins
+INFO: [Opt 31-1287] Pulled Inverter add_ln703_16_reg_1398706[7]_i_73 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_58_reg_1398726[7]_i_25, which resulted in an inversion of 30 pins
+INFO: [Opt 31-1287] Pulled Inverter add_ln703_16_reg_1398706[7]_i_74 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/add_ln703_659_reg_1399046[7]_i_27, which resulted in an inversion of 33 pins
+INFO: [Opt 31-1287] Pulled Inverter add_ln703_1818_reg_4495397[15]_i_149 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_958_reg_4495067[15]_i_18, which resulted in an inversion of 60 pins
+INFO: [Opt 31-1287] Pulled Inverter add_ln703_1818_reg_4495397[15]_i_150 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_958_reg_4495067[15]_i_22, which resulted in an inversion of 36 pins
+INFO: [Opt 31-1287] Pulled Inverter add_ln703_1818_reg_4495397[15]_i_151 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_958_reg_4495067[7]_i_19, which resulted in an inversion of 26 pins
+INFO: [Opt 31-1287] Pulled Inverter add_ln703_1818_reg_4495397[15]_i_152 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_958_reg_4495067[7]_i_22, which resulted in an inversion of 30 pins
+INFO: [Opt 31-1287] Pulled Inverter add_ln703_1818_reg_4495397[15]_i_153 into driver instance grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_958_reg_4495067[7]_i_24, which resulted in an inversion of 27 pins
+INFO: [Common 17-14] Message 'Opt 31-1287' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 2 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 83708d71
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:24 . Memory (MB): peak = 7171.965 ; gain = 0.000 ; free physical = 3836 ; free virtual = 258581
+INFO: [Opt 31-389] Phase Retarget created 13 cells and removed 319 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1545145bb
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:26 . Memory (MB): peak = 7171.965 ; gain = 0.000 ; free physical = 3799 ; free virtual = 258569
+INFO: [Opt 31-389] Phase Constant propagation created 12 cells and removed 15 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: c29e0a8e
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:43 . Memory (MB): peak = 7171.965 ; gain = 0.000 ; free physical = 3788 ; free virtual = 258661
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 4 BUFG optimization | Checksum: c29e0a8e
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 7203.980 ; gain = 32.016 ; free physical = 3819 ; free virtual = 258818
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: c29e0a8e
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 7203.980 ; gain = 32.016 ; free physical = 3788 ; free virtual = 258811
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: c29e0a8e
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:03:35 . Memory (MB): peak = 7203.980 ; gain = 32.016 ; free physical = 16543 ; free virtual = 272623
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              13  |             319  |                                              0  |
+|  Constant propagation         |              12  |              15  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.2 ; elapsed = 00:00:00.21 . Memory (MB): peak = 7203.980 ; gain = 0.000 ; free physical = 12770 ; free virtual = 270090
+Ending Logic Optimization Task | Checksum: 11f1cc5af
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:03:43 . Memory (MB): peak = 7203.980 ; gain = 32.016 ; free physical = 12765 ; free virtual = 270089
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 4 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 8
+Ending PowerOpt Patch Enables Task | Checksum: 11f1cc5af
+
+Time (s): cpu = 00:00:00.82 ; elapsed = 00:00:00.89 . Memory (MB): peak = 8730.574 ; gain = 0.000 ; free physical = 7516 ; free virtual = 269896
+Ending Power Optimization Task | Checksum: 11f1cc5af
+
+Time (s): cpu = 00:02:23 ; elapsed = 00:00:37 . Memory (MB): peak = 8730.574 ; gain = 1526.594 ; free physical = 7550 ; free virtual = 269941
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 11f1cc5af
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 8730.574 ; gain = 0.000 ; free physical = 7544 ; free virtual = 269937
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8730.574 ; gain = 0.000 ; free physical = 7534 ; free virtual = 269931
+Ending Netlist Obfuscation Task | Checksum: 11f1cc5af
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 8730.574 ; gain = 0.000 ; free physical = 7524 ; free virtual = 269925
+INFO: [Common 17-83] Releasing license: Implementation
+131 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:05:26 ; elapsed = 00:04:47 . Memory (MB): peak = 8730.574 ; gain = 2810.801 ; free physical = 7493 ; free virtual = 269906
+INFO: [Timing 38-480] Writing timing data to binary archive.
+INFO: [Common 17-1381] The checkpoint '/home/ubhks/masterarbeit_ubhks/git_work/neural_test2/neural_test2.runs/impl_1/myproject_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 8735.570 ; gain = 4.996 ; free physical = 7845 ; free virtual = 270977
+INFO: [runtcl-4] Executing : report_drc -file myproject_drc_opted.rpt -pb myproject_drc_opted.pb -rpx myproject_drc_opted.rpx
+Command: report_drc -file myproject_drc_opted.rpt -pb myproject_drc_opted.pb -rpx myproject_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/xilinx/Vivado/2022.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/ubhks/masterarbeit_ubhks/git_work/neural_test2/neural_test2.runs/impl_1/myproject_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 8751.578 ; gain = 16.008 ; free physical = 6776 ; free virtual = 270807
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu160'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu160'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 8751.578 ; gain = 0.000 ; free physical = 6894 ; free virtual = 271268
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: bfef97b2
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.1 . Memory (MB): peak = 8751.578 ; gain = 0.000 ; free physical = 6972 ; free virtual = 271349
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8751.578 ; gain = 0.000 ; free physical = 6996 ; free virtual = 271367
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1035b7c74
+
+Time (s): cpu = 00:02:09 ; elapsed = 00:00:52 . Memory (MB): peak = 8751.578 ; gain = 0.000 ; free physical = 4383 ; free virtual = 270140
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1e70e8383
+
+Time (s): cpu = 00:03:47 ; elapsed = 00:01:34 . Memory (MB): peak = 9053.633 ; gain = 302.055 ; free physical = 5197 ; free virtual = 270058
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1e70e8383
+
+Time (s): cpu = 00:03:47 ; elapsed = 00:01:34 . Memory (MB): peak = 9053.633 ; gain = 302.055 ; free physical = 5184 ; free virtual = 270048
+Phase 1 Placer Initialization | Checksum: 1e70e8383
+
+Time (s): cpu = 00:03:48 ; elapsed = 00:01:35 . Memory (MB): peak = 9053.633 ; gain = 302.055 ; free physical = 4984 ; free virtual = 269939
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 19f29bf80
+
+Time (s): cpu = 00:04:03 ; elapsed = 00:01:42 . Memory (MB): peak = 9133.672 ; gain = 382.094 ; free physical = 5805 ; free virtual = 270946
+
+Phase 2.2 Physical Synthesis After Floorplan
+INFO: [Physopt 32-46] Identified 3 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-81] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/ap_ce_reg. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config11_0_0_0_0_0_0_fu_207/ap_ce_reg. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net fc1_input_V_ap_vld_preg. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net fc1_input_V_ap_vld_preg. Replicated 1 times.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 3 nets or cells. Created 4 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.9 ; elapsed = 00:00:00.91 . Memory (MB): peak = 9133.672 ; gain = 0.000 ; free physical = 5927 ; free virtual = 271090
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9133.672 ; gain = 0.000 ; free physical = 5874 ; free virtual = 271088
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                         |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------
+|  PSIP Post Floorplan SLR Replication  |            4  |              0  |                     3  |           0  |           1  |  00:00:08  |
+|  Total                                |            4  |              0  |                     3  |           0  |           1  |  00:00:08  |
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis After Floorplan | Checksum: 14f663ab7
+
+Time (s): cpu = 00:04:28 ; elapsed = 00:01:54 . Memory (MB): peak = 9133.672 ; gain = 382.094 ; free physical = 5877 ; free virtual = 271119
+
+Phase 2.3 Update Timing before SLR Path Opt
+Phase 2.3 Update Timing before SLR Path Opt | Checksum: 191180c74
+
+Time (s): cpu = 00:04:35 ; elapsed = 00:01:56 . Memory (MB): peak = 9133.672 ; gain = 382.094 ; free physical = 5902 ; free virtual = 271134
+
+Phase 2.4 Post-Processing in Floorplanning
+Phase 2.4 Post-Processing in Floorplanning | Checksum: 1d70fefc3
+
+Time (s): cpu = 00:04:36 ; elapsed = 00:01:56 . Memory (MB): peak = 9133.672 ; gain = 382.094 ; free physical = 5831 ; free virtual = 271093
+
+Phase 2.5 Global Placement Core
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 27a9a9893
+
+Time (s): cpu = 00:07:35 ; elapsed = 00:03:22 . Memory (MB): peak = 9333.770 ; gain = 582.191 ; free physical = 4875 ; free virtual = 270255
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 541 LUTNM shape to break, 2525 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 209, two critical 332, total 541, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 1680 nets or LUTs. Breaked 541 LUTs, combined 1139 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-76] Pass 1. Identified 2 candidate nets for fanout optimization.
+INFO: [Physopt 32-81] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/ap_ce_reg. Replicated 8 times.
+INFO: [Physopt 32-81] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/ap_ce_reg. Replicated 9 times.
+INFO: [Physopt 32-232] Optimized 2 nets. Created 17 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 2 nets or cells. Created 17 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.94 ; elapsed = 00:00:00.95 . Memory (MB): peak = 9333.770 ; gain = 0.000 ; free physical = 5087 ; free virtual = 270530
+INFO: [Physopt 32-46] Identified 200 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-81] Processed net layer2_out_55_V_reg_1804[2]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_55_V_reg_1804[4]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_61_V_reg_1834[2]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_61_V_reg_1834[6]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_61_V_reg_1834[4]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_55_V_reg_1804[3]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_62_V_reg_1839[3]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_61_V_reg_1834[0]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_61_V_reg_1834[7]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_61_V_reg_1834[5]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_62_V_reg_1839[7]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_61_V_reg_1834[3]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_51_V_reg_1784[2]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_61_V_reg_1834[1]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_62_V_reg_1839[2]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_62_V_reg_1839[5]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_26_V_reg_1659[2]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_5_V_reg_1554[2]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_26_V_reg_1659[4]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_26_V_reg_1659[1]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_26_V_reg_1659[5]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_26_V_reg_1659[3]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_26_V_reg_1659[0]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_62_V_reg_1839[14]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_28_V_reg_1669[2]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_62_V_reg_1839[0]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_56_V_reg_1809[3]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_5_V_reg_1554[0]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_62_V_reg_1839[10]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_56_V_reg_1809[5]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_62_V_reg_1839[1]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_57_V_reg_1814[2]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_28_V_reg_1669[3]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_28_V_reg_1669[6]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_28_V_reg_1669[4]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_28_V_reg_1669[7]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_28_V_reg_1669[5]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_20_V_reg_1629[1]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_20_V_reg_1629[0]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_56_V_reg_1809[2]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_31_V_reg_1684[1]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_5_V_reg_1554[1]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_57_V_reg_1814[3]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_60_V_reg_1829[2]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_20_V_reg_1629[3]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_20_V_reg_1629[5]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_20_V_reg_1629[2]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_20_V_reg_1629[4]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_34_V_reg_1699[6]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_34_V_reg_1699[4]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_31_V_reg_1684[0]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_57_V_reg_1814[4]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_31_V_reg_1684[2]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_34_V_reg_1699[5]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_31_V_reg_1684[3]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_56_V_reg_1809[4]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_60_V_reg_1829[4]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_32_V_reg_1689[2]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_60_V_reg_1829[3]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_57_V_reg_1814[5]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_55_V_reg_1804[0]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_31_V_reg_1684[4]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_60_V_reg_1829[0]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_34_V_reg_1699[2]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_57_V_reg_1814[0]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_32_V_reg_1689[4]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_60_V_reg_1829[1]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_32_V_reg_1689[5]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_57_V_reg_1814[6]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_32_V_reg_1689[3]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_57_V_reg_1814[1]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_56_V_reg_1809[1]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_4_V_reg_1549[0]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_28_V_reg_1669[0]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_57_V_reg_1814[7]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_56_V_reg_1809[0]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_34_V_reg_1699[3]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_32_V_reg_1689[0]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_34_V_reg_1699[0]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_28_V_reg_1669[1]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_3_V_reg_1544[3]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_59_V_reg_1824[2]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_3_V_reg_1544[2]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_55_V_reg_1804[1]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_28_V_reg_1669[11]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_59_V_reg_1824[6]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_34_V_reg_1699[1]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_3_V_reg_1544[4]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_54_V_reg_1799[2]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_28_V_reg_1669[10]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_59_V_reg_1824[3]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_29_V_reg_1674[2]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net layer2_out_28_V_reg_1669[14]. Replicated 1 times.
+INFO: [Physopt 32-232] Optimized 93 nets. Created 93 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 93 nets or cells. Created 93 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.3 ; elapsed = 00:00:00.31 . Memory (MB): peak = 9333.770 ; gain = 0.000 ; free physical = 4995 ; free virtual = 270440
+INFO: [Physopt 32-457] Pass 1. Identified 50 candidate cells for DSP register optimization.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_112_fu_1114_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_221_fu_1245_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_226_fu_1606_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_194_fu_1180_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_283_fu_1801_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_8_fu_1150_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_230_fu_1572_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_203_fu_1767_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_193_fu_1523_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_222_fu_1906_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_223_fu_1563_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_247_fu_1991_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_196_fu_1344_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_195_fu_1753_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_61_fu_1833_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_287_fu_1354_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_225_fu_1400_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_289_fu_1582_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_146_fu_1700_p2. 15 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_187_fu_1938_p2. No change.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_233_fu_1463_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_141_fu_1271_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_279_fu_1317_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_237_fu_1067_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_48_fu_1262_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_260_fu_1865_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_71_fu_1079_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_295_fu_1497_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_69_fu_1564_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_206_fu_1054_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_270_fu_1640_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_53_fu_1601_p2. 15 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_190_fu_1204_p2. No change.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_202_fu_1099_p2. 15 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_205_fu_1404_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_153_fu_1431_p2. No change.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_40_fu_2049_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_267_fu_1457_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_292_fu_1880_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_132_fu_1496_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_51_fu_1962_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_134_fu_1477_p2. 15 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_326_fu_1888_p2. No change.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_42_fu_2023_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_90_fu_1233_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_113_fu_1727_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_278_fu_2011_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_285_fu_1516_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_91_fu_1543_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_284_fu_1269_p2. 15 registers were pushed out.
+INFO: [Physopt 32-457] Pass 2. Identified 15 candidate cells for DSP register optimization.
+INFO: [Physopt 32-457] Pass 2. Identified 50 candidate cells for DSP register optimization.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_8_fu_1150_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_146_fu_1700_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_193_fu_1523_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_51_fu_1962_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_112_fu_1114_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_40_fu_2049_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_270_fu_1640_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_61_fu_1833_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_194_fu_1180_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_48_fu_1262_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_206_fu_1054_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_141_fu_1271_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_225_fu_1400_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_91_fu_1543_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_42_fu_2023_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_187_fu_1938_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_190_fu_1204_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_205_fu_1404_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_153_fu_1431_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_326_fu_1888_p2. No change.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_329_fu_1447_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_228_fu_1649_p2. 15 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_189_fu_1905_p2. No change.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_43_fu_1336_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_200_fu_1840_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_269_fu_1967_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_229_fu_1486_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_171_fu_1576_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_198_fu_1510_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_224_fu_1440_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_34_fu_1184_p2. 15 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_143_fu_1478_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_328_fu_1651_p2. No change.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_67_fu_1325_p2. 15 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_179_fu_1345_p2. No change.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_356_fu_1975_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_274_fu_1970_p2. 15 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_185_fu_1267_p2. No change.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_162_fu_1873_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_271_fu_1682_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_360_fu_1363_p2. 15 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_5_fu_1312_p2. No change.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_302_fu_1786_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_65_fu_1405_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_227_fu_1443_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_41_fu_2036_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_265_fu_1146_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_298_fu_1635_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_58_fu_1191_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_16_fu_1910_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_282_fu_1292_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_78_fu_1033_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_199_fu_2010_p2. 15 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_184_fu_1676_p2. No change.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_136_fu_1781_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_79_fu_1362_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_170_fu_1842_p2. 15 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_89_fu_1583_p2. 15 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_31_fu_1435_p2. No change.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_10_fu_1119_p2. 15 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_96_fu_1239_p2. No change.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_286_fu_1558_p2. 15 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_30_fu_1778_p2. No change.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_87_fu_1596_p2. 15 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_148_fu_1681_p2. No change.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 79 nets or cells. Created 1185 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.7 ; elapsed = 00:00:00.7 . Memory (MB): peak = 9333.770 ; gain = 0.000 ; free physical = 4787 ; free virtual = 270230
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9333.770 ; gain = 0.000 ; free physical = 5002 ; free virtual = 270366
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9333.770 ; gain = 0.000 ; free physical = 5000 ; free virtual = 270363
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |          541  |           1139  |                  1680  |           0  |           1  |  00:00:03  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |           17  |              0  |                     2  |           0  |           1  |  00:00:01  |
+|  Critical Cell                                    |           93  |              0  |                    93  |           0  |           1  |  00:00:34  |
+|  DSP Register                                     |         1185  |              0  |                    79  |           0  |           1  |  00:00:20  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |         1836  |           1139  |                  1854  |           0  |          10  |  00:00:58  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 2c9ed14bd
+
+Time (s): cpu = 00:08:57 ; elapsed = 00:04:39 . Memory (MB): peak = 9333.770 ; gain = 582.191 ; free physical = 4939 ; free virtual = 270400
+Phase 2.5 Global Placement Core | Checksum: 2447278f8
+
+Time (s): cpu = 00:09:23 ; elapsed = 00:04:56 . Memory (MB): peak = 9333.770 ; gain = 582.191 ; free physical = 4864 ; free virtual = 270394
+Phase 2 Global Placement | Checksum: 2447278f8
+
+Time (s): cpu = 00:09:24 ; elapsed = 00:04:57 . Memory (MB): peak = 9333.770 ; gain = 582.191 ; free physical = 5103 ; free virtual = 270495
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 2439030ec
+
+Time (s): cpu = 00:09:38 ; elapsed = 00:05:02 . Memory (MB): peak = 9333.770 ; gain = 582.191 ; free physical = 4955 ; free virtual = 270416
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 18f273ab1
+
+Time (s): cpu = 00:10:07 ; elapsed = 00:05:14 . Memory (MB): peak = 9333.770 ; gain = 582.191 ; free physical = 4916 ; free virtual = 270379
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 160ffb4be
+
+Time (s): cpu = 00:11:07 ; elapsed = 00:05:35 . Memory (MB): peak = 9333.770 ; gain = 582.191 ; free physical = 4954 ; free virtual = 270272
+
+Phase 3.3.2 DP Optimization
+Phase 3.3.2 DP Optimization | Checksum: 19902c65e
+
+Time (s): cpu = 00:11:51 ; elapsed = 00:05:52 . Memory (MB): peak = 9333.770 ; gain = 582.191 ; free physical = 5070 ; free virtual = 270384
+
+Phase 3.3.3 Flow Legalize Slice Clusters
+Phase 3.3.3 Flow Legalize Slice Clusters | Checksum: 1c8e5ab57
+
+Time (s): cpu = 00:11:54 ; elapsed = 00:05:54 . Memory (MB): peak = 9333.770 ; gain = 582.191 ; free physical = 5052 ; free virtual = 270364
+
+Phase 3.3.4 Slice Area Swap
+
+Phase 3.3.4.1 Slice Area Swap Initial
+Phase 3.3.4.1 Slice Area Swap Initial | Checksum: 121b4e7cd
+
+Time (s): cpu = 00:12:00 ; elapsed = 00:05:58 . Memory (MB): peak = 9333.770 ; gain = 582.191 ; free physical = 4957 ; free virtual = 270284
+Phase 3.3.4 Slice Area Swap | Checksum: 177369c58
+
+Time (s): cpu = 00:12:04 ; elapsed = 00:06:02 . Memory (MB): peak = 9333.770 ; gain = 582.191 ; free physical = 4969 ; free virtual = 270295
+Phase 3.3 Small Shape DP | Checksum: 289cf5a21
+
+Time (s): cpu = 00:12:13 ; elapsed = 00:06:06 . Memory (MB): peak = 9333.770 ; gain = 582.191 ; free physical = 5100 ; free virtual = 270429
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 24920eeaa
+
+Time (s): cpu = 00:12:19 ; elapsed = 00:06:11 . Memory (MB): peak = 9333.770 ; gain = 582.191 ; free physical = 5111 ; free virtual = 270441
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 2202e5b54
+
+Time (s): cpu = 00:12:20 ; elapsed = 00:06:13 . Memory (MB): peak = 9333.770 ; gain = 582.191 ; free physical = 5072 ; free virtual = 270403
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 1b11d861c
+
+Time (s): cpu = 00:13:24 ; elapsed = 00:06:34 . Memory (MB): peak = 9333.770 ; gain = 582.191 ; free physical = 5118 ; free virtual = 270448
+Phase 3 Detail Placement | Checksum: 1b11d861c
+
+Time (s): cpu = 00:13:25 ; elapsed = 00:06:35 . Memory (MB): peak = 9333.770 ; gain = 582.191 ; free physical = 5118 ; free virtual = 270448
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 100c35674
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.986 | TNS=-2389.898 |
+Phase 1 Physical Synthesis Initialization | Checksum: c8ddabfe
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:03 . Memory (MB): peak = 9561.145 ; gain = 0.000 ; free physical = 4774 ; free virtual = 270125
+INFO: [Place 46-35] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/CEA2, inserted BUFG to drive 4572 loads.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 1, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 1cb13489d
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:09 . Memory (MB): peak = 9561.145 ; gain = 0.000 ; free physical = 4832 ; free virtual = 270192
+Phase 4.1.1.1 BUFG Insertion | Checksum: 11f8b9551
+
+Time (s): cpu = 00:16:41 ; elapsed = 00:07:28 . Memory (MB): peak = 9561.145 ; gain = 809.566 ; free physical = 4759 ; free virtual = 270174
+
+Phase 4.1.1.2 BUFG Replication
+INFO: [Place 46-63] BUFG replication identified 0 candidate nets: Replicated nets: 0, Replicated BUFGs: 0, Replicated BUFG Driver: 0, Skipped due to Placement / Routing Conflict: 0, Skipped due to Timing: 0, Skipped due to constraints: 0
+Phase 4.1.1.2 BUFG Replication | Checksum: 11f8b9551
+
+Time (s): cpu = 00:16:42 ; elapsed = 00:07:30 . Memory (MB): peak = 9561.145 ; gain = 809.566 ; free physical = 11126 ; free virtual = 276603
+
+Phase 4.1.1.3 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-1.361. For the most accurate timing information please run report_timing.
+Phase 4.1.1.3 Post Placement Timing Optimization | Checksum: 12ba68646
+
+Time (s): cpu = 00:18:24 ; elapsed = 00:09:08 . Memory (MB): peak = 9561.145 ; gain = 809.566 ; free physical = 7329 ; free virtual = 272864
+
+Phase 4.1.1.4 Replication
+INFO: [Place 46-19] Post Replication Timing Summary WNS=-1.361. For the most accurate timing information please run report_timing.
+Phase 4.1.1.4 Replication | Checksum: 1221c82fa
+
+Time (s): cpu = 00:18:30 ; elapsed = 00:09:13 . Memory (MB): peak = 9561.145 ; gain = 809.566 ; free physical = 5294 ; free virtual = 270866
+
+Time (s): cpu = 00:18:30 ; elapsed = 00:09:13 . Memory (MB): peak = 9561.145 ; gain = 809.566 ; free physical = 5297 ; free virtual = 270869
+Phase 4.1 Post Commit Optimization | Checksum: 1221c82fa
+
+Time (s): cpu = 00:18:31 ; elapsed = 00:09:14 . Memory (MB): peak = 9561.145 ; gain = 809.566 ; free physical = 5261 ; free virtual = 270838
+Netlist sorting complete. Time (s): cpu = 00:00:00.64 ; elapsed = 00:00:00.65 . Memory (MB): peak = 9561.145 ; gain = 0.000 ; free physical = 8041 ; free virtual = 273658
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 2040d11a1
+
+Time (s): cpu = 00:18:42 ; elapsed = 00:09:24 . Memory (MB): peak = 9561.145 ; gain = 809.566 ; free physical = 8753 ; free virtual = 274361
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                2x2|                8x8|
+|___________|___________________|___________________|
+|      South|                4x4|              16x16|
+|___________|___________________|___________________|
+|       East|                2x2|              32x32|
+|___________|___________________|___________________|
+|       West|                2x2|                8x8|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 2040d11a1
+
+Time (s): cpu = 00:18:44 ; elapsed = 00:09:25 . Memory (MB): peak = 9561.145 ; gain = 809.566 ; free physical = 8730 ; free virtual = 274342
+Phase 4.3 Placer Reporting | Checksum: 2040d11a1
+
+Time (s): cpu = 00:18:45 ; elapsed = 00:09:27 . Memory (MB): peak = 9561.145 ; gain = 809.566 ; free physical = 8743 ; free virtual = 274347
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9561.145 ; gain = 0.000 ; free physical = 8727 ; free virtual = 274339
+
+Time (s): cpu = 00:18:45 ; elapsed = 00:09:27 . Memory (MB): peak = 9561.145 ; gain = 809.566 ; free physical = 8727 ; free virtual = 274339
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1ce24f1d9
+
+Time (s): cpu = 00:18:47 ; elapsed = 00:09:28 . Memory (MB): peak = 9561.145 ; gain = 809.566 ; free physical = 8060 ; free virtual = 273684
+Ending Placer Task | Checksum: 12da6bae5
+
+Time (s): cpu = 00:18:48 ; elapsed = 00:09:29 . Memory (MB): peak = 9561.145 ; gain = 809.566 ; free physical = 7830 ; free virtual = 273457
+INFO: [Common 17-83] Releasing license: Implementation
+397 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:18:57 ; elapsed = 00:09:34 . Memory (MB): peak = 9561.145 ; gain = 809.566 ; free physical = 8246 ; free virtual = 273887
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:28 ; elapsed = 00:00:15 . Memory (MB): peak = 9577.152 ; gain = 8.004 ; free physical = 8407 ; free virtual = 274383
+report_design_analysis: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 9585.156 ; gain = 8.004 ; free physical = 6038 ; free virtual = 272023
+INFO: [Common 17-1381] The checkpoint '/home/ubhks/masterarbeit_ubhks/git_work/neural_test2/neural_test2.runs/impl_1/myproject_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:50 ; elapsed = 00:00:31 . Memory (MB): peak = 9585.156 ; gain = 24.012 ; free physical = 9314 ; free virtual = 275107
+INFO: [runtcl-4] Executing : report_io -file myproject_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.62 ; elapsed = 00:00:00.89 . Memory (MB): peak = 9585.156 ; gain = 0.000 ; free physical = 9281 ; free virtual = 275087
+INFO: [runtcl-4] Executing : report_utilization -file myproject_utilization_placed.rpt -pb myproject_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file myproject_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.29 . Memory (MB): peak = 9585.156 ; gain = 0.000 ; free physical = 9410 ; free virtual = 275188
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu160'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu160'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:15 . Memory (MB): peak = 9585.156 ; gain = 0.000 ; free physical = 9265 ; free virtual = 275060
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 79.27s |  WALL: 21.29s
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9585.156 ; gain = 0.000 ; free physical = 9262 ; free virtual = 275059
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.361 | TNS=-1793.753 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1448d3b6b
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:26 . Memory (MB): peak = 9585.156 ; gain = 0.000 ; free physical = 9115 ; free virtual = 274953
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.361 | TNS=-1793.753 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-457] Pass 1. Identified 7 candidate cells for DSP register optimization.
+INFO: [Physopt 32-457] Pass 1. Identified 5 candidate cells for DSP register optimization.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_8_fu_1150_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_193_fu_1523_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_146_fu_1700_p2. No change.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_34_fu_1184_p2. 15 registers were pushed in.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_51_fu_1962_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_10_fu_1119_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_222_fu_1906_p2. No change.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_337_fu_1115_p2. 15 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_5_fu_1312_p2. No change.
+INFO: [Physopt 32-665] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_348_fu_2041_p2. 15 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_15_fu_1235_p2. No change.
+INFO: [Physopt 32-666] Processed cell grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_47_fu_1964_p2. No change.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 3 nets or cells. Created 30 new cells, deleted 15 existing cells and moved 0 existing cell
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.361 | TNS=-1782.635 |
+Netlist sorting complete. Time (s): cpu = 00:00:00.56 ; elapsed = 00:00:00.56 . Memory (MB): peak = 9585.156 ; gain = 0.000 ; free physical = 9047 ; free virtual = 274930
+Phase 2 DSP Register Optimization | Checksum: 1e3cb1dea
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:51 . Memory (MB): peak = 9585.156 ; gain = 0.000 ; free physical = 9129 ; free virtual = 274998
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.361 | TNS=-1782.635 |
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_153_fu_1431_p2/DSP_A_B_DATA.B_ALU<0>. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_856_reg_4495022[2] was not replicated.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_856_reg_4495022[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/mul_ln1118_161_fu_1212_p2_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 96 pins.
+INFO: [Physopt 32-735] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/mul_ln1118_161_fu_1212_p2_i_26_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.344 | TNS=-1782.035 |
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_243_fu_1073_p2/DSP_A_B_DATA.B_ALU<0>. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_1291_reg_4495182[1] was not replicated.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_1291_reg_4495182[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/mul_ln1118_251_fu_1602_p2_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 96 pins.
+INFO: [Physopt 32-735] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/mul_ln1118_251_fu_1602_p2_i_27_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.341 | TNS=-1778.412 |
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/mul_ln1118_161_fu_1212_p2_i_26_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/acc_13_V_fu_4494238_p2[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/ap_return_13_int_reg[15]_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 70 pins.
+INFO: [Physopt 32-735] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/ap_return_13_int_reg[15]_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.340 | TNS=-1777.624 |
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_333_fu_1327_p2/DSP_A_B_DATA.B_ALU<0>. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_1765_reg_4495372[1] was not replicated.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_1765_reg_4495372[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/mul_ln1118_332_fu_1040_p2_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 96 pins.
+INFO: [Physopt 32-735] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/mul_ln1118_332_fu_1040_p2_i_26_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.333 | TNS=-1776.916 |
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_34_fu_1184_p2/DSP_A_B_DATA.B_ALU<0>. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_245_reg_4494747[2] was not replicated.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_245_reg_4494747[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/mul_ln1118_26_fu_1487_p2_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 96 pins.
+INFO: [Physopt 32-735] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/mul_ln1118_26_fu_1487_p2_i_26_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.331 | TNS=-1775.399 |
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_171/mul_ln1118_15_fu_1235_p2/DSP_A_B_DATA.B_ALU<0>. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_159_reg_4494707[1] was not replicated.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_159_reg_4494707[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/call_ret3_relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_s_fu_324/p_0_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/mul_ln1118_10_fu_1119_p2_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/add_ln703_201_fu_4493948_p2[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/ap_return_0_int_reg[15]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 70 pins.
+INFO: [Physopt 32-735] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/ap_return_0_int_reg[15]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.328 | TNS=-1767.604 |
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/mul_ln1118_332_fu_1040_p2_i_26_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/acc_30_V_fu_4494493_p2[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/ap_return_30_int_reg[15]_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 70 pins.
+INFO: [Physopt 32-735] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/ap_return_30_int_reg[15]_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.321 | TNS=-1761.638 |
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/ap_return_13_int_reg[15]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 70 pins.
+INFO: [Physopt 32-735] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/ap_return_13_int_reg[15]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.316 | TNS=-1762.058 |
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/ap_return_13_int_reg[15]_i_15_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 70 pins.
+INFO: [Physopt 32-735] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/ap_return_13_int_reg[15]_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.286 | TNS=-1759.002 |
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/mul_ln1118_630_fu_2663_p2/DSP_A_B_DATA.B_ALU<0>. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net layer2_out_61_V_reg_1834[2]_repN.  Re-placed instance layer2_out_61_V_reg_1834_reg[2]_replica
+INFO: [Physopt 32-735] Processed net layer2_out_61_V_reg_1834[2]_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.284 | TNS=-1758.973 |
+INFO: [Physopt 32-702] Processed net layer2_out_61_V_reg_1834[2]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/mul_ln1118_633_fu_3178_p2_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/mul_ln1118_633_fu_3178_p2_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/fc1_input_V_ap_vld_preg_reg_11. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ap_clk_IBUF_inst/OUT. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ap_clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/mul_ln1118_630_fu_2663_p2/DSP_A_B_DATA.B_ALU<0>. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net layer2_out_61_V_reg_1834[2]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/mul_ln1118_633_fu_3178_p2_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/mul_ln1118_633_fu_3178_p2_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/fc1_input_V_ap_vld_preg_reg_11. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ap_clk_IBUF_inst/OUT. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ap_clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.284 | TNS=-1758.973 |
+Phase 3 Critical Path Optimization | Checksum: 1e3cb1dea
+
+Time (s): cpu = 00:02:09 ; elapsed = 00:01:19 . Memory (MB): peak = 9585.156 ; gain = 0.000 ; free physical = 9176 ; free virtual = 275063
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.284 | TNS=-1758.973 |
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/mul_ln1118_630_fu_2663_p2/DSP_A_B_DATA.B_ALU<0>. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net layer2_out_61_V_reg_1834[2]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/mul_ln1118_633_fu_3178_p2_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/mul_ln1118_633_fu_3178_p2_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/fc1_input_V_ap_vld_preg_reg_11. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ap_clk_IBUF_inst/OUT. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ap_clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/mul_ln1118_630_fu_2663_p2/DSP_A_B_DATA.B_ALU<0>. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net layer2_out_61_V_reg_1834[2]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/mul_ln1118_633_fu_3178_p2_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/mul_ln1118_633_fu_3178_p2_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_97/fc1_input_V_ap_vld_preg_reg_11. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ap_clk_IBUF_inst/OUT. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ap_clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.284 | TNS=-1758.973 |
+Phase 4 Critical Path Optimization | Checksum: 1e3cb1dea
+
+Time (s): cpu = 00:02:46 ; elapsed = 00:01:41 . Memory (MB): peak = 9585.156 ; gain = 0.000 ; free physical = 10393 ; free virtual = 276340
+Netlist sorting complete. Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.15 . Memory (MB): peak = 9585.156 ; gain = 0.000 ; free physical = 10376 ; free virtual = 276334
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9585.156 ; gain = 0.000 ; free physical = 10372 ; free virtual = 276333
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-1.284 | TNS=-1758.973 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |         11.118  |           30  |             15  |                     3  |           0  |           1  |  00:00:23  |
+|  Critical Path  |          0.077  |         23.662  |            0  |              0  |                    10  |           0  |           2  |  00:00:50  |
+|  Total          |          0.077  |         34.780  |           30  |             15  |                    13  |           0  |           3  |  00:01:13  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9585.156 ; gain = 0.000 ; free physical = 10355 ; free virtual = 276317
+Ending Physical Synthesis Task | Checksum: 216a69edb
+
+Time (s): cpu = 00:02:49 ; elapsed = 00:01:45 . Memory (MB): peak = 9585.156 ; gain = 0.000 ; free physical = 10357 ; free virtual = 276320
+INFO: [Common 17-83] Releasing license: Implementation
+518 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:04:02 ; elapsed = 00:02:07 . Memory (MB): peak = 9585.156 ; gain = 0.000 ; free physical = 10472 ; free virtual = 276433
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:28 ; elapsed = 00:00:15 . Memory (MB): peak = 9585.156 ; gain = 0.000 ; free physical = 10136 ; free virtual = 276413
+report_design_analysis: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 9585.156 ; gain = 0.000 ; free physical = 9875 ; free virtual = 276169
+INFO: [Common 17-1381] The checkpoint '/home/ubhks/masterarbeit_ubhks/git_work/neural_test2/neural_test2.runs/impl_1/myproject_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:46 ; elapsed = 00:00:29 . Memory (MB): peak = 9585.156 ; gain = 0.000 ; free physical = 9755 ; free virtual = 275807
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu160'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu160'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: e411b88 ConstDB: 0 ShapeSum: baea45fd RouteDB: 6c7db513
+Nodegraph reading from file.  Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 9593.160 ; gain = 0.000 ; free physical = 9512 ; free virtual = 275589
+Post Restoration Checksum: NetGraph: f77ad2b4 NumContArr: eb31e9b0 Constraints: 7e0a4ba6 Timing: 0
+Phase 1 Build RT Design | Checksum: 260b7080a
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:15 . Memory (MB): peak = 9593.160 ; gain = 0.000 ; free physical = 9454 ; free virtual = 275542
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 260b7080a
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:16 . Memory (MB): peak = 9593.160 ; gain = 0.000 ; free physical = 9304 ; free virtual = 275403
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 260b7080a
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:17 . Memory (MB): peak = 9593.160 ; gain = 0.000 ; free physical = 9308 ; free virtual = 275404
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 1471b6627
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:21 . Memory (MB): peak = 9850.582 ; gain = 257.422 ; free physical = 9247 ; free virtual = 275346
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 161084989
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:00:36 . Memory (MB): peak = 9850.582 ; gain = 257.422 ; free physical = 9181 ; free virtual = 275271
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.247 | TNS=-1230.663| WHS=0.004  | THS=0.000  |
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 87774
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 79885
+  Number of Partially Routed Nets     = 7889
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 1ce2f0aee
+
+Time (s): cpu = 00:04:06 ; elapsed = 00:01:18 . Memory (MB): peak = 9930.785 ; gain = 337.625 ; free physical = 7987 ; free virtual = 274475
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 1ce2f0aee
+
+Time (s): cpu = 00:04:07 ; elapsed = 00:01:19 . Memory (MB): peak = 9930.785 ; gain = 337.625 ; free physical = 7986 ; free virtual = 274474
+Phase 3 Initial Routing | Checksum: 22feecaac
+
+Time (s): cpu = 00:05:19 ; elapsed = 00:01:45 . Memory (MB): peak = 10010.785 ; gain = 417.625 ; free physical = 7840 ; free virtual = 274335
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 14015
+ Number of Nodes with overlaps = 1802
+ Number of Nodes with overlaps = 319
+ Number of Nodes with overlaps = 102
+ Number of Nodes with overlaps = 47
+ Number of Nodes with overlaps = 35
+ Number of Nodes with overlaps = 22
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+INFO: [Route 35-443] CLB routing congestion detected. Several CLBs have high routing utilization, which can impact timing closure. Congested CLBs and Nets are dumped in: iter_100_CongestedCLBsAndNets.txt
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+INFO: [Route 35-443] CLB routing congestion detected. Several CLBs have high routing utilization, which can impact timing closure. Congested CLBs and Nets are dumped in: iter_110_CongestedCLBsAndNets.txt
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.274 | TNS=-4137.799| WHS=0.026  | THS=0.000  |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1f102d20c
+
+Time (s): cpu = 00:11:55 ; elapsed = 00:05:20 . Memory (MB): peak = 10026.793 ; gain = 433.633 ; free physical = 8818 ; free virtual = 275557
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 59
+ Number of Nodes with overlaps = 45
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.220 | TNS=-3903.581| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1a17dd13c
+
+Time (s): cpu = 00:13:05 ; elapsed = 00:06:23 . Memory (MB): peak = 10026.793 ; gain = 433.633 ; free physical = 7606 ; free virtual = 275198
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 59
+ Number of Nodes with overlaps = 29
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.161 | TNS=-3603.789| WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 1f3e2a550
+
+Time (s): cpu = 00:14:13 ; elapsed = 00:07:23 . Memory (MB): peak = 10026.793 ; gain = 433.633 ; free physical = 5778 ; free virtual = 274516
+
+Phase 4.4 Global Iteration 3
+ Number of Nodes with overlaps = 39
+ Number of Nodes with overlaps = 22
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.180 | TNS=-3540.490| WHS=N/A    | THS=N/A    |
+
+Phase 4.4 Global Iteration 3 | Checksum: 2494d5c2e
+
+Time (s): cpu = 00:14:56 ; elapsed = 00:08:00 . Memory (MB): peak = 10026.793 ; gain = 433.633 ; free physical = 5221 ; free virtual = 273987
+Phase 4 Rip-up And Reroute | Checksum: 2494d5c2e
+
+Time (s): cpu = 00:14:57 ; elapsed = 00:08:01 . Memory (MB): peak = 10026.793 ; gain = 433.633 ; free physical = 5189 ; free virtual = 273955
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1d4740b53
+
+Time (s): cpu = 00:15:41 ; elapsed = 00:08:12 . Memory (MB): peak = 10026.793 ; gain = 433.633 ; free physical = 5220 ; free virtual = 273988
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.161 | TNS=-3603.789| WHS=0.026  | THS=0.000  |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 2adf3a8af
+
+Time (s): cpu = 00:19:41 ; elapsed = 00:09:00 . Memory (MB): peak = 11122.691 ; gain = 1529.531 ; free physical = 6336 ; free virtual = 273877
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 2adf3a8af
+
+Time (s): cpu = 00:19:42 ; elapsed = 00:09:00 . Memory (MB): peak = 11122.691 ; gain = 1529.531 ; free physical = 6332 ; free virtual = 273871
+Phase 5 Delay and Skew Optimization | Checksum: 2adf3a8af
+
+Time (s): cpu = 00:19:42 ; elapsed = 00:09:01 . Memory (MB): peak = 11122.691 ; gain = 1529.531 ; free physical = 6340 ; free virtual = 273880
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 24b30a419
+
+Time (s): cpu = 00:20:26 ; elapsed = 00:09:12 . Memory (MB): peak = 11122.691 ; gain = 1529.531 ; free physical = 6310 ; free virtual = 273848
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.161 | TNS=-3541.156| WHS=0.026  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 26a695c16
+
+Time (s): cpu = 00:20:27 ; elapsed = 00:09:13 . Memory (MB): peak = 11122.691 ; gain = 1529.531 ; free physical = 6357 ; free virtual = 273893
+Phase 6 Post Hold Fix | Checksum: 26a695c16
+
+Time (s): cpu = 00:20:28 ; elapsed = 00:09:13 . Memory (MB): peak = 11122.691 ; gain = 1529.531 ; free physical = 6320 ; free virtual = 273859
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 5.07938 %
+  Global Horizontal Routing Utilization  = 3.23079 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 85.1695%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_X43Y371 -> INT_X43Y371
+South Dir 1x1 Area, Max Cong = 79.7468%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 87.5%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_X46Y348 -> INT_X46Y348
+West Dir 1x1 Area, Max Cong = 78.8462%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 1
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 1
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 16884069e
+
+Time (s): cpu = 00:20:40 ; elapsed = 00:09:18 . Memory (MB): peak = 11122.691 ; gain = 1529.531 ; free physical = 6351 ; free virtual = 273878
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 16884069e
+
+Time (s): cpu = 00:20:40 ; elapsed = 00:09:19 . Memory (MB): peak = 11122.691 ; gain = 1529.531 ; free physical = 6347 ; free virtual = 273875
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 16884069e
+
+Time (s): cpu = 00:20:50 ; elapsed = 00:09:26 . Memory (MB): peak = 11138.699 ; gain = 1545.539 ; free physical = 6408 ; free virtual = 273942
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-1.161 | TNS=-3541.156| WHS=0.026  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 16884069e
+
+Time (s): cpu = 00:21:16 ; elapsed = 00:09:31 . Memory (MB): peak = 11138.699 ; gain = 1545.539 ; free physical = 6425 ; free virtual = 273964
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:21:16 ; elapsed = 00:09:31 . Memory (MB): peak = 11138.699 ; gain = 1545.539 ; free physical = 6777 ; free virtual = 274315
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+540 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:21:39 ; elapsed = 00:09:41 . Memory (MB): peak = 11138.699 ; gain = 1553.543 ; free physical = 6775 ; free virtual = 274314
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:28 ; elapsed = 00:00:15 . Memory (MB): peak = 11138.699 ; gain = 0.000 ; free physical = 6400 ; free virtual = 274269
+report_design_analysis: Time (s): cpu = 00:00:27 ; elapsed = 00:00:13 . Memory (MB): peak = 11146.703 ; gain = 8.004 ; free physical = 6303 ; free virtual = 274184
+INFO: [Common 17-1381] The checkpoint '/home/ubhks/masterarbeit_ubhks/git_work/neural_test2/neural_test2.runs/impl_1/myproject_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:01:02 ; elapsed = 00:00:37 . Memory (MB): peak = 11146.703 ; gain = 8.004 ; free physical = 6545 ; free virtual = 274187
+INFO: [runtcl-4] Executing : report_drc -file myproject_drc_routed.rpt -pb myproject_drc_routed.pb -rpx myproject_drc_routed.rpx
+Command: report_drc -file myproject_drc_routed.rpt -pb myproject_drc_routed.pb -rpx myproject_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/ubhks/masterarbeit_ubhks/git_work/neural_test2/neural_test2.runs/impl_1/myproject_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:31 ; elapsed = 00:00:12 . Memory (MB): peak = 11154.707 ; gain = 8.004 ; free physical = 6571 ; free virtual = 274224
+INFO: [runtcl-4] Executing : report_methodology -file myproject_methodology_drc_routed.rpt -pb myproject_methodology_drc_routed.pb -rpx myproject_methodology_drc_routed.rpx
+Command: report_methodology -file myproject_methodology_drc_routed.rpt -pb myproject_methodology_drc_routed.pb -rpx myproject_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/ubhks/masterarbeit_ubhks/git_work/neural_test2/neural_test2.runs/impl_1/myproject_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:02:46 ; elapsed = 00:00:36 . Memory (MB): peak = 11154.707 ; gain = 0.000 ; free physical = 6895 ; free virtual = 274560
+INFO: [runtcl-4] Executing : report_power -file myproject_power_routed.rpt -pb myproject_power_summary_routed.pb -rpx myproject_power_routed.rpx
+Command: report_power -file myproject_power_routed.rpt -pb myproject_power_summary_routed.pb -rpx myproject_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+552 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:01:31 ; elapsed = 00:00:27 . Memory (MB): peak = 11178.719 ; gain = 24.012 ; free physical = 6780 ; free virtual = 274475
+INFO: [runtcl-4] Executing : report_route_status -file myproject_route_status.rpt -pb myproject_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file myproject_timing_summary_routed.rpt -pb myproject_timing_summary_routed.pb -rpx myproject_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+report_timing_summary: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 11178.719 ; gain = 0.000 ; free physical = 6757 ; free virtual = 274456
+INFO: [runtcl-4] Executing : report_incremental_reuse -file myproject_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file myproject_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 11178.719 ; gain = 0.000 ; free physical = 6733 ; free virtual = 274445
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file myproject_bus_skew_routed.rpt -pb myproject_bus_skew_routed.pb -rpx myproject_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 21 17:08:36 2023...

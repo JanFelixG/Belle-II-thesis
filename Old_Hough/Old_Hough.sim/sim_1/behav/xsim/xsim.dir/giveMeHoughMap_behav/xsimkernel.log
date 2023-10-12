@@ -1,0 +1,7 @@
+Running: xsim.dir/giveMeHoughMap_behav/xsimk -simmode gui -wdb giveMeHoughMap_behav.wdb -simrunnum 0 -socket 40013
+Design successfully loaded
+Design Loading Memory Usage: 516732 KB (Peak: 516732 KB)
+Design Loading CPU Usage: 940 ms
+Simulation completed
+Simulation Memory Usage: 1721852 KB (Peak: 2755096 KB)
+Simulation CPU Usage: 2060 ms

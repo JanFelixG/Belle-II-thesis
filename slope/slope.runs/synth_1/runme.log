@@ -1,0 +1,445 @@
+
+*** Running vivado
+    with args -log slope.vds -m64 -stack 2000 -product Vivado -mode batch -messageDb vivado.pb -notrace -source slope.tcl
+
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+
+****** Vivado v2022.2.2 (64-bit)
+  **** SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+  **** IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+    ** Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
+
+source slope.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4343.520 ; gain = 97.047 ; free physical = 253646 ; free virtual = 435719
+Command: read_checkpoint -auto_incremental -incremental /home/ubhks/masterarbeit_ubhks/git_work/slope/slope.srcs/utils_1/imports/synth_1/slope.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/ubhks/masterarbeit_ubhks/git_work/slope/slope.srcs/utils_1/imports/synth_1/slope.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top slope -part xcvu160-flgb2104-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvu160'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu160'
+INFO: [Device 21-403] Loading part xcvu160-flgb2104-2-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3824181
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 5586.832 ; gain = 364.801 ; free physical = 252302 ; free virtual = 434376
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2715.145; parent = 2526.569; children = 188.575
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 7180.930; parent = 5589.805; children = 1591.125
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'slope' [/home/ubhks/masterarbeit_ubhks/git_work/slope/slope.srcs/sources_1/new/slope.vhd:31]
+WARNING: [Synth 8-614] signal 'i_slope' is read in the process but is not in the sensitivity list [/home/ubhks/masterarbeit_ubhks/git_work/slope/slope.srcs/sources_1/new/slope.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'slope' (0#1) [/home/ubhks/masterarbeit_ubhks/git_work/slope/slope.srcs/sources_1/new/slope.vhd:31]
+WARNING: [Synth 8-3917] design slope has port o_array[0,0,0][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,0,0][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,0,1][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,0,1][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,0,2][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,0,2][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,0,3][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,0,3][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,0,4][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,0,4][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,0,5][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,0,5][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,0,6][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,0,6][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,0,7][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,0,7][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,0,8][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,0,8][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,1,0][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,1,0][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,1,1][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,1,1][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,1,2][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,1,2][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,1,3][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,1,3][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,1,4][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,1,4][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,1,5][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,1,5][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,1,6][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,1,6][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,1,7][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,1,7][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,1,8][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,1,8][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,2,0][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,2,0][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,2,1][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,2,1][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,2,2][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,2,2][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,2,3][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,2,3][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,2,4][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,2,4][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,2,5][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,2,5][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,2,6][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,2,6][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,2,7][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,2,7][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,2,8][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,2,8][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,3,0][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,3,0][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,3,1][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,3,1][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,3,2][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,3,2][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,3,3][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,3,3][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,3,4][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,3,4][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,3,5][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,3,5][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,3,6][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,3,6][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,3,7][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,3,7][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,3,8][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,3,8][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,4,0][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,4,0][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,4,1][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,4,1][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,4,2][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,4,2][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,4,3][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,4,3][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,4,4][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,4,4][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,4,5][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,4,5][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,4,6][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,4,6][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,4,7][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,4,7][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,4,8][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,4,8][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,5,0][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,5,0][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,5,1][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,5,1][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,5,2][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,5,2][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,5,3][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,5,3][cluster_label][0] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,5,4][cluster_label][1] driven by constant 0
+WARNING: [Synth 8-3917] design slope has port o_array[0,5,4][cluster_label][0] driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7129] Port i_array[0,0,0][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,0,0][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,0,1][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,0,1][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,0,2][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,0,2][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,0,3][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,0,3][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,0,4][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,0,4][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,0,5][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,0,5][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,0,6][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,0,6][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,0,7][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,0,7][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,0,8][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,0,8][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,1,0][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,1,0][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,1,1][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,1,1][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,1,2][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,1,2][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,1,3][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,1,3][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,1,4][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,1,4][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,1,5][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,1,5][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,1,6][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,1,6][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,1,7][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,1,7][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,1,8][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,1,8][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,2,0][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,2,0][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,2,1][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,2,1][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,2,2][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,2,2][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,2,3][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,2,3][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,2,4][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,2,4][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,2,5][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,2,5][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,2,6][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,2,6][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,2,7][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,2,7][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,2,8][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,2,8][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,3,0][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,3,0][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,3,1][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,3,1][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,3,2][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,3,2][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,3,3][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,3,3][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,3,4][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,3,4][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,3,5][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,3,5][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,3,6][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,3,6][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,3,7][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,3,7][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,3,8][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,3,8][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,4,0][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,4,0][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,4,1][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,4,1][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,4,2][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,4,2][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,4,3][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,4,3][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,4,4][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,4,4][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,4,5][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,4,5][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,4,6][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,4,6][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,4,7][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,4,7][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,4,8][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,4,8][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,5,0][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,5,0][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,5,1][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,5,1][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,5,2][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,5,2][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,5,3][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,5,3][cluster_label][0] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,5,4][cluster_label][1] in module slope is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_array[0,5,4][cluster_label][0] in module slope is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 6946.770 ; gain = 1724.738 ; free physical = 251619 ; free virtual = 434092
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3465.620; parent = 3277.074; children = 188.575
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 8537.898; parent = 6946.773; children = 1591.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 6946.770 ; gain = 1724.738 ; free physical = 251568 ; free virtual = 434092
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3465.620; parent = 3277.074; children = 188.575
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 8537.898; parent = 6946.773; children = 1591.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 6946.770 ; gain = 1724.738 ; free physical = 251569 ; free virtual = 434095
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3465.620; parent = 3277.074; children = 188.575
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 8537.898; parent = 6946.773; children = 1591.125
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 6946.770 ; gain = 0.000 ; free physical = 250398 ; free virtual = 434038
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ubhks/masterarbeit_ubhks/git_work/slope/slope.srcs/constrs_1/new/cons1.xdc]
+Finished Parsing XDC File [/home/ubhks/masterarbeit_ubhks/git_work/slope/slope.srcs/constrs_1/new/cons1.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7010.801 ; gain = 0.000 ; free physical = 249985 ; free virtual = 433830
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.54 ; elapsed = 00:00:00.56 . Memory (MB): peak = 7010.801 ; gain = 0.000 ; free physical = 249950 ; free virtual = 433814
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:24 ; elapsed = 00:02:25 . Memory (MB): peak = 7010.801 ; gain = 1788.770 ; free physical = 250242 ; free virtual = 434167
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3465.620; parent = 3277.074; children = 188.575
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 8569.914; parent = 6978.789; children = 1591.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:07 ; elapsed = 00:03:10 . Memory (MB): peak = 7010.801 ; gain = 1788.770 ; free physical = 240257 ; free virtual = 424191
+Synthesis current peak Physical Memory [PSS] (MB): peak = 12764.719; parent = 3277.074; children = 9922.229
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 32623.336; parent = 6982.707; children = 25644.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 10800 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1560 (col length:112)
+BRAMs: 6552 (col length: RAMB18 336 RAMB36 168)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:37 ; elapsed = 00:03:41 . Memory (MB): peak = 7010.801 ; gain = 1788.770 ; free physical = 240047 ; free virtual = 423639
+Synthesis current peak Physical Memory [PSS] (MB): peak = 12974.769; parent = 3277.074; children = 10160.768
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 32966.109; parent = 6996.926; children = 25969.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:49 ; elapsed = 00:03:55 . Memory (MB): peak = 7010.801 ; gain = 1788.770 ; free physical = 239179 ; free virtual = 423363
+Synthesis current peak Physical Memory [PSS] (MB): peak = 13266.366; parent = 3277.074; children = 10160.768
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 32975.562; parent = 7006.375; children = 25969.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:49 ; elapsed = 00:03:56 . Memory (MB): peak = 7010.801 ; gain = 1788.770 ; free physical = 239169 ; free virtual = 423352
+Synthesis current peak Physical Memory [PSS] (MB): peak = 13271.054; parent = 3277.074; children = 10160.768
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 32975.562; parent = 7006.375; children = 25969.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:28 ; elapsed = 00:04:43 . Memory (MB): peak = 7143.578 ; gain = 1921.547 ; free physical = 237783 ; free virtual = 421989
+Synthesis current peak Physical Memory [PSS] (MB): peak = 14715.101; parent = 3277.074; children = 11719.782
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 35158.465; parent = 7143.574; children = 28018.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:50 ; elapsed = 00:05:06 . Memory (MB): peak = 7143.578 ; gain = 1921.547 ; free physical = 237760 ; free virtual = 422036
+Synthesis current peak Physical Memory [PSS] (MB): peak = 14715.101; parent = 3277.074; children = 11719.782
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 35158.465; parent = 7143.574; children = 28018.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:51 ; elapsed = 00:05:08 . Memory (MB): peak = 7143.578 ; gain = 1921.547 ; free physical = 237751 ; free virtual = 422027
+Synthesis current peak Physical Memory [PSS] (MB): peak = 14715.101; parent = 3277.074; children = 11719.782
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 35158.465; parent = 7143.574; children = 28018.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:58 ; elapsed = 00:05:15 . Memory (MB): peak = 7143.578 ; gain = 1921.547 ; free physical = 237730 ; free virtual = 422006
+Synthesis current peak Physical Memory [PSS] (MB): peak = 14715.101; parent = 3277.074; children = 11719.782
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 35158.465; parent = 7143.574; children = 28018.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:59 ; elapsed = 00:05:17 . Memory (MB): peak = 7143.578 ; gain = 1921.547 ; free physical = 237737 ; free virtual = 422013
+Synthesis current peak Physical Memory [PSS] (MB): peak = 14715.101; parent = 3277.074; children = 11719.782
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 35158.465; parent = 7143.574; children = 28018.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:00 ; elapsed = 00:05:18 . Memory (MB): peak = 7143.578 ; gain = 1921.547 ; free physical = 237750 ; free virtual = 422018
+Synthesis current peak Physical Memory [PSS] (MB): peak = 14715.101; parent = 3277.074; children = 11719.782
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 35158.465; parent = 7143.574; children = 28018.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:04 ; elapsed = 00:05:22 . Memory (MB): peak = 7143.578 ; gain = 1921.547 ; free physical = 237750 ; free virtual = 422018
+Synthesis current peak Physical Memory [PSS] (MB): peak = 14715.101; parent = 3277.074; children = 11719.782
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 35158.465; parent = 7143.574; children = 28018.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+-------+
+|      |Cell   |Count  |
++------+-------+-------+
+|1     |CARRY8 |  10800|
+|2     |LUT2   |  86400|
+|3     |LUT4   |  86400|
+|4     |IBUF   |  86408|
+|5     |OBUF   | 108000|
++------+-------+-------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:04 ; elapsed = 00:05:23 . Memory (MB): peak = 7143.578 ; gain = 1921.547 ; free physical = 237750 ; free virtual = 422018
+Synthesis current peak Physical Memory [PSS] (MB): peak = 14715.101; parent = 3277.074; children = 11719.782
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 35158.465; parent = 7143.574; children = 28018.805
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 43200 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:20 ; elapsed = 00:04:43 . Memory (MB): peak = 7143.578 ; gain = 1857.516 ; free physical = 249515 ; free virtual = 433783
+Synthesis Optimization Complete : Time (s): cpu = 00:05:07 ; elapsed = 00:05:27 . Memory (MB): peak = 7143.578 ; gain = 1921.547 ; free physical = 249547 ; free virtual = 433786
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7143.578 ; gain = 0.000 ; free physical = 251270 ; free virtual = 435495
+INFO: [Netlist 29-17] Analyzing 97208 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 11 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'slope' is not ideal for floorplanning, since the cellview 'slope' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.16 . Memory (MB): peak = 7259.676 ; gain = 0.000 ; free physical = 250630 ; free virtual = 434854
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 86408 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 86408 instances
+
+Synth Design complete, checksum: abb40fe
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 202 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:07:17 ; elapsed = 00:07:33 . Memory (MB): peak = 7259.676 ; gain = 2898.312 ; free physical = 250999 ; free virtual = 435224
+INFO: [Common 17-1381] The checkpoint '/home/ubhks/masterarbeit_ubhks/git_work/slope/slope.runs/synth_1/slope.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:44 ; elapsed = 00:00:30 . Memory (MB): peak = 7331.711 ; gain = 72.035 ; free physical = 250864 ; free virtual = 435175
+INFO: [runtcl-4] Executing : report_utilization -file slope_utilization_synth.rpt -pb slope_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 26 15:29:08 2023...

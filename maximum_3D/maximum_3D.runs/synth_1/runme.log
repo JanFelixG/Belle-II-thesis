@@ -1,0 +1,741 @@
+
+*** Running vivado
+    with args -log maximum.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source maximum.tcl
+
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+
+****** Vivado v2022.2.2 (64-bit)
+  **** SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+  **** IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+    ** Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
+
+source maximum.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2363.445 ; gain = 98.047 ; free physical = 165767 ; free virtual = 250558
+Command: read_checkpoint -auto_incremental -incremental /home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.srcs/utils_1/imports/synth_1/maximum.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.srcs/utils_1/imports/synth_1/maximum.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top maximum -part xcvu160-flgb2104-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvu160'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu160'
+INFO: [Device 21-403] Loading part xcvu160-flgb2104-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1624805
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3606.133 ; gain = 364.832 ; free physical = 164039 ; free virtual = 249189
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2693.522; parent = 2508.092; children = 185.431
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5202.297; parent = 3606.137; children = 1596.160
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'maximum' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.srcs/sources_1/new/main.vhd:22]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.srcs/sources_1/new/main.vhd:28]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.srcs/sources_1/new/main.vhd:28]
+WARNING: [Synth 8-614] signal 'i_enable' is read in the process but is not in the sensitivity list [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.srcs/sources_1/new/main.vhd:58]
+WARNING: [Synth 8-614] signal 's_cluster_element_array' is read in the process but is not in the sensitivity list [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.srcs/sources_1/new/main.vhd:58]
+WARNING: [Synth 8-614] signal 's_location' is read in the process but is not in the sensitivity list [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.srcs/sources_1/new/main.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'maximum' (0#1) [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.srcs/sources_1/new/main.vhd:22]
+WARNING: [Synth 8-11357] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  s_cluster_element_array_reg with 28100 registers
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,0][value][7] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,0][value][6] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,0][value][5] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,0][value][4] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,0][value][3] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,0][value][2] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,0][value][1] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,0][value][0] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,0][cluster_label][1] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,0][cluster_label][0] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,1][value][7] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,1][value][6] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,1][value][5] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,1][value][4] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,1][value][3] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,1][value][2] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,1][value][1] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,1][value][0] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,1][cluster_label][1] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,1][cluster_label][0] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,2][value][7] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,2][value][6] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,2][value][5] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,2][value][4] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,2][value][3] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,2][value][2] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,2][value][1] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,2][value][0] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,2][cluster_label][1] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,2][cluster_label][0] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,3][value][7] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,3][value][6] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,3][value][5] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,3][value][4] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,3][value][3] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,3][value][2] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,3][value][1] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,3][value][0] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,3][cluster_label][1] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,3][cluster_label][0] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,4][value][7] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,4][value][6] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,4][value][5] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,4][value][4] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,4][value][3] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,4][value][2] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,4][value][1] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,4][value][0] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,4][cluster_label][1] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,4][cluster_label][0] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,5][value][7] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,5][value][6] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,5][value][5] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,5][value][4] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,5][value][3] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,5][value][2] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,5][value][1] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,5][value][0] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,5][cluster_label][1] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,5][cluster_label][0] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,6][value][7] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,6][value][6] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,6][value][5] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,6][value][4] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,6][value][3] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,6][value][2] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,6][value][1] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,6][value][0] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,6][cluster_label][1] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,6][cluster_label][0] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,7][value][7] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,7][value][6] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,7][value][5] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,7][value][4] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,7][value][3] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,7][value][2] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,7][value][1] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,7][value][0] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,7][cluster_label][1] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,7][cluster_label][0] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,8][value][7] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,8][value][6] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,8][value][5] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,8][value][4] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,8][value][3] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,8][value][2] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,8][value][1] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,8][value][0] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,8][cluster_label][1] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,0,8][cluster_label][0] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,1,0][value][7] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,1,0][value][6] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,1,0][value][5] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,1,0][value][4] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,1,0][value][3] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,1,0][value][2] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,1,0][value][1] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,1,0][value][0] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,1,0][cluster_label][1] in module maximum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_cluster_element_array[0,1,0][cluster_label][0] in module maximum is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:04 ; elapsed = 00:02:11 . Memory (MB): peak = 5354.305 ; gain = 2113.004 ; free physical = 163148 ; free virtual = 248324
+Synthesis current peak Physical Memory [PSS] (MB): peak = 4021.405; parent = 3835.983; children = 185.431
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6950.469; parent = 5354.309; children = 1596.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:05 ; elapsed = 00:02:13 . Memory (MB): peak = 5354.305 ; gain = 2113.004 ; free physical = 163150 ; free virtual = 248325
+Synthesis current peak Physical Memory [PSS] (MB): peak = 4021.405; parent = 3835.983; children = 185.431
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6950.469; parent = 5354.309; children = 1596.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:05 ; elapsed = 00:02:13 . Memory (MB): peak = 5354.305 ; gain = 2113.004 ; free physical = 163150 ; free virtual = 248325
+Synthesis current peak Physical Memory [PSS] (MB): peak = 4021.405; parent = 3835.983; children = 185.431
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6950.469; parent = 5354.309; children = 1596.160
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 5354.305 ; gain = 0.000 ; free physical = 163050 ; free virtual = 248226
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.srcs/constrs_1/new/cons1.xdc]
+Finished Parsing XDC File [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.srcs/constrs_1/new/cons1.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5418.336 ; gain = 0.000 ; free physical = 162578 ; free virtual = 247751
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.16 . Memory (MB): peak = 5418.336 ; gain = 0.000 ; free physical = 162584 ; free virtual = 247757
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:44 ; elapsed = 00:02:50 . Memory (MB): peak = 5418.336 ; gain = 2177.035 ; free physical = 163376 ; free virtual = 248552
+Synthesis current peak Physical Memory [PSS] (MB): peak = 4021.405; parent = 3835.983; children = 185.431
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6982.484; parent = 5386.324; children = 1596.160
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6702] IncrSynth : Design change found in an area of the design that prevents previous synthesis information being used, Reverting to default synthesis
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:02:52 ; elapsed = 00:02:59 . Memory (MB): peak = 5418.336 ; gain = 2177.035 ; free physical = 160016 ; free virtual = 245209
+Synthesis current peak Physical Memory [PSS] (MB): peak = 6594.956; parent = 3835.983; children = 3357.636
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 16410.832; parent = 5390.242; children = 11024.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:02:52 ; elapsed = 00:02:59 . Memory (MB): peak = 5418.336 ; gain = 2177.035 ; free physical = 159890 ; free virtual = 245083
+Synthesis current peak Physical Memory [PSS] (MB): peak = 6748.334; parent = 3835.983; children = 3511.500
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 16544.551; parent = 5390.242; children = 11158.227
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'o_maximum_reg[0]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_maximum_reg[1]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_maximum_reg[2]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 's_location_reg' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:75]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[0][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[1][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[2][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[3][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[4][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[5][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[6][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[7][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[8][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[9][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[10][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[11][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[12][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[13][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[14][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[15][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[16][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[17][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[18][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[19][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[20][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[21][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[22][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[23][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[24][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[25][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[26][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[27][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[28][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[29][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[30][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[31][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[32][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[33][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[34][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[35][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[36][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[37][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[38][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[39][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[40][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[41][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[42][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[43][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[44][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[45][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[46][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[47][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[48][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[49][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[50][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[51][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[52][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[53][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[54][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[55][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[56][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[57][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[58][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[59][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[60][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[61][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[62][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[63][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[64][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[65][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[66][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[67][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[68][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[69][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[70][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[71][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[72][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[73][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[74][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[75][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[76][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[77][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[78][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[79][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[80][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[81][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[82][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[84][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[85][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[86][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[87][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[88][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[89][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[90][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[91][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[92][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[93][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[94][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[95][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 's_cluster_element_array_reg[96][value]' [/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/1993/src/std_1164.vhd:67]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:04:43 ; elapsed = 00:05:01 . Memory (MB): peak = 5418.336 ; gain = 2177.035 ; free physical = 153026 ; free virtual = 238220
+Synthesis current peak Physical Memory [PSS] (MB): peak = 13220.488; parent = 3835.983; children = 9900.848
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 23118.719; parent = 5390.242; children = 17732.395
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : Design change found in an area of the design that prevents previous synthesis information being used
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 2     
+	   2 Input   31 Bit       Adders := 2     
+	   2 Input   14 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 4     
+	   2 Input   11 Bit       Adders := 7     
+	   2 Input   10 Bit       Adders := 15    
+	   2 Input    9 Bit       Adders := 30    
+	   2 Input    8 Bit       Adders := 56    
+	   2 Input    7 Bit       Adders := 107   
+	   2 Input    6 Bit       Adders := 190   
+	   2 Input    5 Bit       Adders := 322   
+	   2 Input    4 Bit       Adders := 503   
++---Multipliers : 
+	               6x32  Multipliers := 1     
+	               7x32  Multipliers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 3     
+	   2 Input   31 Bit        Muxes := 2     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 2     
+	10800 Input   12 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 4     
+	   2 Input   11 Bit        Muxes := 8     
+	2700 Input   10 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 15    
+	   2 Input    9 Bit        Muxes := 30    
+	2811 Input    8 Bit        Muxes := 2     
+	 825 Input    8 Bit        Muxes := 2     
+	   8 Input    8 Bit        Muxes := 301   
+	   2 Input    8 Bit        Muxes := 3742  
+	   9 Input    8 Bit        Muxes := 72    
+	   4 Input    8 Bit        Muxes := 463   
+	 149 Input    8 Bit        Muxes := 2     
+	  25 Input    8 Bit        Muxes := 5     
+	 547 Input    8 Bit        Muxes := 1     
+	 297 Input    8 Bit        Muxes := 1     
+	 587 Input    8 Bit        Muxes := 1     
+	 290 Input    8 Bit        Muxes := 1     
+	 612 Input    8 Bit        Muxes := 1     
+	  22 Input    8 Bit        Muxes := 13    
+	  12 Input    8 Bit        Muxes := 55    
+	  40 Input    8 Bit        Muxes := 3     
+	  23 Input    8 Bit        Muxes := 17    
+	  21 Input    8 Bit        Muxes := 59    
+	   7 Input    8 Bit        Muxes := 22    
+	 278 Input    8 Bit        Muxes := 1     
+	  64 Input    8 Bit        Muxes := 4     
+	 270 Input    8 Bit        Muxes := 1     
+	  67 Input    8 Bit        Muxes := 1     
+	  32 Input    8 Bit        Muxes := 11    
+	  16 Input    8 Bit        Muxes := 95    
+	 571 Input    8 Bit        Muxes := 1     
+	  73 Input    8 Bit        Muxes := 4     
+	  41 Input    8 Bit        Muxes := 5     
+	  11 Input    8 Bit        Muxes := 24    
+	  39 Input    8 Bit        Muxes := 3     
+	  13 Input    8 Bit        Muxes := 83    
+	 675 Input    8 Bit        Muxes := 6     
+	1017 Input    8 Bit        Muxes := 1     
+	 441 Input    8 Bit        Muxes := 1     
+	2700 Input    8 Bit        Muxes := 3     
+	 886 Input    8 Bit        Muxes := 1     
+	1015 Input    8 Bit        Muxes := 1     
+	5400 Input    8 Bit        Muxes := 2     
+	  42 Input    8 Bit        Muxes := 85    
+	1350 Input    8 Bit        Muxes := 1     
+	 337 Input    8 Bit        Muxes := 10    
+	 168 Input    8 Bit        Muxes := 35    
+	   5 Input    8 Bit        Muxes := 15    
+	  84 Input    8 Bit        Muxes := 43    
+	   6 Input    8 Bit        Muxes := 24    
+	 275 Input    8 Bit        Muxes := 1     
+	  26 Input    8 Bit        Muxes := 10    
+	   3 Input    8 Bit        Muxes := 22    
+	  19 Input    8 Bit        Muxes := 11    
+	  24 Input    8 Bit        Muxes := 4     
+	  18 Input    8 Bit        Muxes := 16    
+	 280 Input    8 Bit        Muxes := 1     
+	  71 Input    8 Bit        Muxes := 3     
+	 291 Input    8 Bit        Muxes := 1     
+	 151 Input    8 Bit        Muxes := 1     
+	  78 Input    8 Bit        Muxes := 2     
+	 142 Input    8 Bit        Muxes := 1     
+	  68 Input    8 Bit        Muxes := 1     
+	  72 Input    8 Bit        Muxes := 2     
+	  17 Input    8 Bit        Muxes := 6     
+	  69 Input    8 Bit        Muxes := 1     
+	  20 Input    8 Bit        Muxes := 4     
+	  75 Input    8 Bit        Muxes := 1     
+	 160 Input    8 Bit        Muxes := 2     
+	 769 Input    8 Bit        Muxes := 1     
+	 155 Input    8 Bit        Muxes := 1     
+	 311 Input    8 Bit        Muxes := 1     
+	  10 Input    8 Bit        Muxes := 3     
+	 310 Input    8 Bit        Muxes := 1     
+	 154 Input    8 Bit        Muxes := 2     
+	  81 Input    8 Bit        Muxes := 3     
+	  27 Input    8 Bit        Muxes := 1     
+	  65 Input    8 Bit        Muxes := 1     
+	  54 Input    8 Bit        Muxes := 1     
+	  38 Input    8 Bit        Muxes := 3     
+	 127 Input    8 Bit        Muxes := 1     
+	  44 Input    8 Bit        Muxes := 2     
+	  28 Input    8 Bit        Muxes := 1     
+	  43 Input    8 Bit        Muxes := 1     
+	  47 Input    8 Bit        Muxes := 2     
+	  85 Input    8 Bit        Muxes := 1     
+	  93 Input    8 Bit        Muxes := 1     
+	 325 Input    8 Bit        Muxes := 1     
+	 652 Input    8 Bit        Muxes := 1     
+	 328 Input    8 Bit        Muxes := 1     
+	 169 Input    8 Bit        Muxes := 2     
+	 167 Input    8 Bit        Muxes := 3     
+	  45 Input    8 Bit        Muxes := 1     
+	  15 Input    8 Bit        Muxes := 5     
+	  80 Input    8 Bit        Muxes := 2     
+	 145 Input    8 Bit        Muxes := 1     
+	  74 Input    8 Bit        Muxes := 2     
+	  66 Input    8 Bit        Muxes := 1     
+	  76 Input    8 Bit        Muxes := 2     
+	 190 Input    8 Bit        Muxes := 2     
+	 128 Input    8 Bit        Muxes := 2     
+	 106 Input    8 Bit        Muxes := 2     
+	 272 Input    8 Bit        Muxes := 2     
+	  14 Input    8 Bit        Muxes := 5     
+	  79 Input    8 Bit        Muxes := 1     
+	  52 Input    8 Bit        Muxes := 1     
+	 105 Input    8 Bit        Muxes := 2     
+	 189 Input    8 Bit        Muxes := 1     
+	 307 Input    8 Bit        Muxes := 1     
+	  36 Input    8 Bit        Muxes := 1     
+	 306 Input    8 Bit        Muxes := 1     
+	 379 Input    8 Bit        Muxes := 1     
+	 274 Input    8 Bit        Muxes := 1     
+	 212 Input    8 Bit        Muxes := 1     
+	 550 Input    8 Bit        Muxes := 1     
+	  91 Input    8 Bit        Muxes := 1     
+	  89 Input    8 Bit        Muxes := 1     
+	  34 Input    8 Bit        Muxes := 2     
+	 372 Input    8 Bit        Muxes := 1     
+	 437 Input    8 Bit        Muxes := 1     
+	  37 Input    8 Bit        Muxes := 1     
+	  77 Input    8 Bit        Muxes := 1     
+	 165 Input    8 Bit        Muxes := 1     
+	 188 Input    8 Bit        Muxes := 1     
+	  83 Input    8 Bit        Muxes := 1     
+	  92 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 105   
+	   2 Input    6 Bit        Muxes := 191   
+	  64 Input    6 Bit        Muxes := 1     
+	 675 Input    6 Bit        Muxes := 2     
+	 422 Input    6 Bit        Muxes := 1     
+	 254 Input    6 Bit        Muxes := 1     
+	2700 Input    6 Bit        Muxes := 1     
+	1350 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 335   
+	  42 Input    5 Bit        Muxes := 2     
+	  40 Input    5 Bit        Muxes := 2     
+	  39 Input    5 Bit        Muxes := 2     
+	  37 Input    5 Bit        Muxes := 4     
+	  34 Input    5 Bit        Muxes := 2     
+	 128 Input    5 Bit        Muxes := 2     
+	  32 Input    5 Bit        Muxes := 2     
+	  33 Input    5 Bit        Muxes := 2     
+	  44 Input    5 Bit        Muxes := 1     
+	  75 Input    5 Bit        Muxes := 1     
+	  36 Input    5 Bit        Muxes := 3     
+	 168 Input    5 Bit        Muxes := 1     
+	 191 Input    5 Bit        Muxes := 1     
+	  98 Input    5 Bit        Muxes := 1     
+	  62 Input    5 Bit        Muxes := 1     
+	  41 Input    5 Bit        Muxes := 2     
+	 127 Input    5 Bit        Muxes := 1     
+	  89 Input    5 Bit        Muxes := 1     
+	  43 Input    5 Bit        Muxes := 1     
+	  63 Input    5 Bit        Muxes := 1     
+	  60 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 542   
+	  19 Input    4 Bit        Muxes := 1     
+	  18 Input    4 Bit        Muxes := 5     
+	 337 Input    4 Bit        Muxes := 6     
+	 211 Input    4 Bit        Muxes := 1     
+	  44 Input    4 Bit        Muxes := 4     
+	  84 Input    4 Bit        Muxes := 6     
+	 127 Input    4 Bit        Muxes := 1     
+	  42 Input    4 Bit        Muxes := 5     
+	  16 Input    4 Bit        Muxes := 8     
+	  17 Input    4 Bit        Muxes := 5     
+	  36 Input    4 Bit        Muxes := 1     
+	  39 Input    4 Bit        Muxes := 2     
+	  23 Input    4 Bit        Muxes := 3     
+	  22 Input    4 Bit        Muxes := 3     
+	  21 Input    4 Bit        Muxes := 3     
+	  47 Input    4 Bit        Muxes := 5     
+	 106 Input    4 Bit        Muxes := 1     
+	  40 Input    4 Bit        Muxes := 2     
+	  34 Input    4 Bit        Muxes := 1     
+	  62 Input    4 Bit        Muxes := 2     
+	  41 Input    4 Bit        Muxes := 2     
+	  63 Input    4 Bit        Muxes := 2     
+	  59 Input    4 Bit        Muxes := 1     
+	  64 Input    4 Bit        Muxes := 1     
+	  25 Input    4 Bit        Muxes := 1     
+	 128 Input    4 Bit        Muxes := 1     
+	  51 Input    4 Bit        Muxes := 2     
+	  45 Input    4 Bit        Muxes := 1     
+	  48 Input    4 Bit        Muxes := 1     
+	  32 Input    4 Bit        Muxes := 1     
+	  26 Input    4 Bit        Muxes := 1     
+	  12 Input    3 Bit        Muxes := 5     
+	  16 Input    3 Bit        Muxes := 2     
+	  18 Input    3 Bit        Muxes := 6     
+	  84 Input    3 Bit        Muxes := 21    
+	  23 Input    3 Bit        Muxes := 12    
+	  47 Input    3 Bit        Muxes := 2     
+	  32 Input    3 Bit        Muxes := 3     
+	  25 Input    3 Bit        Muxes := 4     
+	  42 Input    3 Bit        Muxes := 8     
+	  21 Input    3 Bit        Muxes := 6     
+	  13 Input    3 Bit        Muxes := 3     
+	  26 Input    3 Bit        Muxes := 4     
+	  19 Input    3 Bit        Muxes := 7     
+	   8 Input    3 Bit        Muxes := 1     
+	  53 Input    3 Bit        Muxes := 1     
+	 168 Input    3 Bit        Muxes := 4     
+	1350 Input    3 Bit        Muxes := 1     
+	 675 Input    3 Bit        Muxes := 2     
+	  22 Input    3 Bit        Muxes := 3     
+	  17 Input    3 Bit        Muxes := 1     
+	  64 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 828   
+	  84 Input    2 Bit        Muxes := 3     
+	  21 Input    2 Bit        Muxes := 15    
+	  23 Input    2 Bit        Muxes := 1     
+	  42 Input    2 Bit        Muxes := 8     
+	  13 Input    2 Bit        Muxes := 3     
+	  12 Input    2 Bit        Muxes := 1     
+	  32 Input    2 Bit        Muxes := 2     
+	 337 Input    2 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1560 (col length:112)
+BRAMs: 6552 (col length: RAMB18 336 RAMB36 168)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 's_location_reg[30]' (LD) to 's_location_reg[14]'
+INFO: [Synth 8-3886] merging instance 's_location_reg[29]' (LD) to 's_location_reg[14]'
+INFO: [Synth 8-3886] merging instance 's_location_reg[28]' (LD) to 's_location_reg[14]'
+INFO: [Synth 8-3886] merging instance 's_location_reg[27]' (LD) to 's_location_reg[14]'
+INFO: [Synth 8-3886] merging instance 's_location_reg[26]' (LD) to 's_location_reg[14]'
+INFO: [Synth 8-3886] merging instance 's_location_reg[25]' (LD) to 's_location_reg[14]'
+INFO: [Synth 8-3886] merging instance 's_location_reg[24]' (LD) to 's_location_reg[14]'
+INFO: [Synth 8-3886] merging instance 's_location_reg[23]' (LD) to 's_location_reg[14]'
+INFO: [Synth 8-3886] merging instance 's_location_reg[22]' (LD) to 's_location_reg[14]'
+INFO: [Synth 8-3886] merging instance 's_location_reg[21]' (LD) to 's_location_reg[14]'
+INFO: [Synth 8-3886] merging instance 's_location_reg[20]' (LD) to 's_location_reg[14]'
+INFO: [Synth 8-3886] merging instance 's_location_reg[19]' (LD) to 's_location_reg[14]'
+INFO: [Synth 8-3886] merging instance 's_location_reg[18]' (LD) to 's_location_reg[14]'
+INFO: [Synth 8-3886] merging instance 's_location_reg[17]' (LD) to 's_location_reg[14]'
+INFO: [Synth 8-3886] merging instance 's_location_reg[16]' (LD) to 's_location_reg[14]'
+INFO: [Synth 8-3886] merging instance 's_location_reg[15]' (LD) to 's_location_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\s_location_reg[14] )
+INFO: [Synth 8-3886] merging instance 'o_maximum_reg[2][21]' (LD) to 'o_maximum_reg[2][22]'
+INFO: [Synth 8-3886] merging instance 'o_maximum_reg[2][22]' (LD) to 'o_maximum_reg[2][23]'
+INFO: [Synth 8-3886] merging instance 'o_maximum_reg[2][23]' (LD) to 'o_maximum_reg[2][24]'
+INFO: [Synth 8-3886] merging instance 'o_maximum_reg[2][24]' (LD) to 'o_maximum_reg[2][25]'
+INFO: [Synth 8-3886] merging instance 'o_maximum_reg[2][25]' (LD) to 'o_maximum_reg[2][26]'
+INFO: [Synth 8-3886] merging instance 'o_maximum_reg[2][26]' (LD) to 'o_maximum_reg[2][27]'
+INFO: [Synth 8-3886] merging instance 'o_maximum_reg[2][27]' (LD) to 'o_maximum_reg[2][28]'
+INFO: [Synth 8-3886] merging instance 'o_maximum_reg[2][28]' (LD) to 'o_maximum_reg[2][29]'
+INFO: [Synth 8-3886] merging instance 'o_maximum_reg[2][29]' (LD) to 'o_maximum_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'o_maximum_reg[2][30]' (LD) to 'o_maximum_reg[2][31]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:06:29 ; elapsed = 00:06:49 . Memory (MB): peak = 5418.336 ; gain = 2177.035 ; free physical = 152495 ; free virtual = 237900
+Synthesis current peak Physical Memory [PSS] (MB): peak = 14089.040; parent = 3835.983; children = 11047.292
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 25311.492; parent = 5390.242; children = 19925.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:41 ; elapsed = 00:07:03 . Memory (MB): peak = 5418.336 ; gain = 2177.035 ; free physical = 152167 ; free virtual = 237694
+Synthesis current peak Physical Memory [PSS] (MB): peak = 14089.040; parent = 3835.983; children = 11047.292
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 25320.945; parent = 5395.777; children = 19925.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:06:46 ; elapsed = 00:07:09 . Memory (MB): peak = 5418.336 ; gain = 2177.035 ; free physical = 152158 ; free virtual = 237685
+Synthesis current peak Physical Memory [PSS] (MB): peak = 14089.040; parent = 3835.983; children = 11047.292
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 25320.945; parent = 5395.777; children = 19925.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:07:03 ; elapsed = 00:07:33 . Memory (MB): peak = 5418.336 ; gain = 2177.035 ; free physical = 150781 ; free virtual = 236332
+Synthesis current peak Physical Memory [PSS] (MB): peak = 14991.888; parent = 3835.983; children = 11738.336
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 26004.895; parent = 5403.785; children = 20601.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:07:21 ; elapsed = 00:07:51 . Memory (MB): peak = 5418.336 ; gain = 2177.035 ; free physical = 150701 ; free virtual = 236334
+Synthesis current peak Physical Memory [PSS] (MB): peak = 14991.888; parent = 3835.983; children = 11738.336
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 26004.895; parent = 5403.785; children = 20601.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:07:22 ; elapsed = 00:07:53 . Memory (MB): peak = 5418.336 ; gain = 2177.035 ; free physical = 150700 ; free virtual = 236334
+Synthesis current peak Physical Memory [PSS] (MB): peak = 14991.888; parent = 3835.983; children = 11738.336
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 26004.895; parent = 5403.785; children = 20601.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:07:24 ; elapsed = 00:07:56 . Memory (MB): peak = 5418.336 ; gain = 2177.035 ; free physical = 150700 ; free virtual = 236333
+Synthesis current peak Physical Memory [PSS] (MB): peak = 14991.888; parent = 3835.983; children = 11738.336
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 26004.895; parent = 5403.785; children = 20601.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:07:25 ; elapsed = 00:07:57 . Memory (MB): peak = 5418.336 ; gain = 2177.035 ; free physical = 150695 ; free virtual = 236328
+Synthesis current peak Physical Memory [PSS] (MB): peak = 14991.888; parent = 3835.983; children = 11738.336
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 26004.895; parent = 5403.785; children = 20601.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:07:30 ; elapsed = 00:08:03 . Memory (MB): peak = 5418.336 ; gain = 2177.035 ; free physical = 150677 ; free virtual = 236310
+Synthesis current peak Physical Memory [PSS] (MB): peak = 14991.888; parent = 3835.983; children = 11738.336
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 26004.895; parent = 5403.785; children = 20601.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:07:31 ; elapsed = 00:08:04 . Memory (MB): peak = 5418.336 ; gain = 2177.035 ; free physical = 150675 ; free virtual = 236308
+Synthesis current peak Physical Memory [PSS] (MB): peak = 14991.888; parent = 3835.983; children = 11738.336
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 26004.895; parent = 5403.785; children = 20601.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY8 |   314|
+|3     |LUT1   |   107|
+|4     |LUT2   |  1125|
+|5     |LUT3   | 24900|
+|6     |LUT4   |  6508|
+|7     |LUT5   | 17725|
+|8     |LUT6   | 49190|
+|9     |MUXF7  | 16757|
+|10    |MUXF8  |  5042|
+|11    |LD     | 22584|
+|12    |IBUF   | 28101|
+|13    |OBUF   |    96|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:07:31 ; elapsed = 00:08:05 . Memory (MB): peak = 5418.336 ; gain = 2177.035 ; free physical = 150675 ; free virtual = 236309
+Synthesis current peak Physical Memory [PSS] (MB): peak = 14991.888; parent = 3835.983; children = 11738.336
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 26004.895; parent = 5403.785; children = 20601.113
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 82715 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:07:05 ; elapsed = 00:07:42 . Memory (MB): peak = 5418.336 ; gain = 2113.004 ; free physical = 162615 ; free virtual = 248249
+Synthesis Optimization Complete : Time (s): cpu = 00:07:35 ; elapsed = 00:08:09 . Memory (MB): peak = 5418.336 ; gain = 2177.035 ; free physical = 162654 ; free virtual = 248249
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 5418.336 ; gain = 0.000 ; free physical = 162578 ; free virtual = 248173
+INFO: [Netlist 29-17] Analyzing 72799 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 5 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'maximum' is not ideal for floorplanning, since the cellview 'maximum' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 5443.797 ; gain = 0.000 ; free physical = 162366 ; free virtual = 247963
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 50686 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 28101 instances
+  LD => LDCE: 22584 instances
+
+Synth Design complete, checksum: c0200564
+INFO: [Common 17-83] Releasing license: Synthesis
+51 Infos, 208 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:08:28 ; elapsed = 00:09:02 . Memory (MB): peak = 5443.797 ; gain = 3062.508 ; free physical = 162723 ; free virtual = 248319
+INFO: [Common 17-1381] The checkpoint '/home/ubhks/masterarbeit_ubhks/git_work/maximum_3D/maximum_3D.runs/synth_1/maximum.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:24 ; elapsed = 00:00:20 . Memory (MB): peak = 5515.832 ; gain = 72.035 ; free physical = 162643 ; free virtual = 248320
+INFO: [runtcl-4] Executing : report_utilization -file maximum_utilization_synth.rpt -pb maximum_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 13 14:40:42 2023...

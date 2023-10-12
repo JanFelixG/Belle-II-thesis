@@ -1,0 +1,565 @@
+
+*** Running vivado
+    with args -log giveMeHoughMap.vds -m64 -stack 2000 -product Vivado -mode batch -messageDb vivado.pb -notrace -source giveMeHoughMap.tcl
+
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+
+****** Vivado v2022.2.2 (64-bit)
+  **** SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+  **** IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+    ** Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
+
+source giveMeHoughMap.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 4343.391 ; gain = 98.016 ; free physical = 56024 ; free virtual = 156207
+Command: synth_design -top giveMeHoughMap -part xcvu160-flgb2104-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvu160'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu160'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3013773
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 4767.055 ; gain = 392.676 ; free physical = 55530 ; free virtual = 155707
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1769.023; parent = 1626.533; children = 142.490
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 6358.172; parent = 4767.059; children = 1591.113
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'giveMeHoughMap' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughMap.vhd:115]
+INFO: [Synth 8-3491] module 'giveMeWeightStereoSL' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:12' bound to instance 'weightPerLine_St_SL5_giveMeWeightStereoSL_fu_12299' of component 'giveMeWeightStereoSL' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughMap.vhd:33842]
+INFO: [Synth 8-638] synthesizing module 'giveMeWeightStereoSL' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:30]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_310' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:9720]
+INFO: [Synth 8-638] synthesizing module 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'giveMeHoughCell' (0#1) [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:37]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_350' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:9743]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_390' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:9766]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_430' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:9789]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_470' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:9812]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_510' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:9835]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_550' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:9858]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_590' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:9881]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_630' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:9904]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_670' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:9927]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_710' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:9950]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_750' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:9973]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_790' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:9996]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_830' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10019]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_870' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10042]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_910' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10065]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_950' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10088]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_990' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10111]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_1030' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10134]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_1070' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10157]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_1110' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10180]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_1150' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10203]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_1190' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10226]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_1230' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10249]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_1270' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10272]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_1310' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10295]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_1350' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10318]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_1390' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10341]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_1430' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10364]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_1470' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10387]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_1510' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10410]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_1550' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10433]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_1590' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10456]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_1630' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10479]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_1670' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10502]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_1710' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10525]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_1750' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10548]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_1790' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10571]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_1830' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10594]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_1870' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10617]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_1910' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10640]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_1950' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10663]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_1990' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10686]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_2030' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10709]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_2070' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10732]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_2110' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10755]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_2150' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10778]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_2190' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10801]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_2230' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10824]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_2270' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10847]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_2310' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10870]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_2350' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10893]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_2390' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10916]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_2430' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10939]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_2470' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10962]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_2510' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:10985]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_2550' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11008]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_2590' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11031]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_2630' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11054]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_2670' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11077]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_2710' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11100]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_2750' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11123]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_2790' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11146]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_2830' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11169]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_2870' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11192]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_2910' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11215]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_2950' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11238]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_2990' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11261]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_3030' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11284]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_3070' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11307]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_3110' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11330]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_3150' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11353]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_3190' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11376]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_3230' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11399]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_3270' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11422]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_3310' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11445]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_3350' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11468]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_3390' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11491]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_3430' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11514]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_3470' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11537]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_3510' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11560]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_3550' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11583]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_3590' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11606]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_3630' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11629]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_3670' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11652]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_3710' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11675]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_3750' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11698]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_3790' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11721]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_3830' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11744]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_3870' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11767]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_3910' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11790]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_3950' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11813]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_3990' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11836]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_4030' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11859]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_4070' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11882]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_4110' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11905]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_4150' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11928]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_4190' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11951]
+INFO: [Synth 8-3491] module 'giveMeHoughCell' declared at '/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughCell.vhd:12' bound to instance 'grp_giveMeHoughCell_fu_4230' of component 'giveMeHoughCell' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:11974]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'giveMeWeightStereoSL' (0#1) [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightStereoSL.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'giveMeWeightAxialSL' [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightAxialSL.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'giveMeWeightAxialSL' (0#1) [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeWeightAxialSL.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'giveMeHoughMap' (0#1) [/home/ubhks/Old_hough/vivado_hls2017/test1/solution1/impl/vhdl/giveMeHoughMap.vhd:115]
+WARNING: [Synth 8-7129] Port p_read[7] in module giveMeHoughCell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[7] in module giveMeHoughCell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[7] in module giveMeHoughCell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read5[4] in module giveMeHoughCell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read6[7] in module giveMeHoughCell is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:02:31 ; elapsed = 00:02:40 . Memory (MB): peak = 7963.695 ; gain = 3589.316 ; free physical = 55011 ; free virtual = 155191
+Synthesis current peak Physical Memory [PSS] (MB): peak = 4948.444; parent = 4805.968; children = 142.490
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 9554.812; parent = 7963.699; children = 1591.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:34 ; elapsed = 00:02:43 . Memory (MB): peak = 7963.695 ; gain = 3589.316 ; free physical = 55169 ; free virtual = 155346
+Synthesis current peak Physical Memory [PSS] (MB): peak = 4948.444; parent = 4805.968; children = 142.490
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 9554.812; parent = 7963.699; children = 1591.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:27 ; elapsed = 00:03:34 . Memory (MB): peak = 7987.707 ; gain = 3613.328 ; free physical = 44613 ; free virtual = 144887
+Synthesis current peak Physical Memory [PSS] (MB): peak = 12720.526; parent = 4805.968; children = 9767.932
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 33633.551; parent = 7987.711; children = 25645.840
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input    9 Bit       Adders := 2880  
+	   3 Input    9 Bit       Adders := 959   
+	   3 Input    7 Bit       Adders := 1     
+	   4 Input    5 Bit       Adders := 5826  
++---Registers : 
+	                9 Bit    Registers := 7196  
+	                7 Bit    Registers := 20    
+	                5 Bit    Registers := 4     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input 28795 Bit        Muxes := 4     
+	   6 Input 4795 Bit        Muxes := 5     
+	   2 Input    7 Bit        Muxes := 2495  
+	   3 Input    7 Bit        Muxes := 668   
+	   4 Input    7 Bit        Muxes := 316   
+	   5 Input    7 Bit        Muxes := 115   
+	   2 Input    6 Bit        Muxes := 10255 
+	   3 Input    6 Bit        Muxes := 2619  
+	   4 Input    6 Bit        Muxes := 1073  
+	   5 Input    6 Bit        Muxes := 290   
+	   2 Input    5 Bit        Muxes := 2469  
+	   3 Input    5 Bit        Muxes := 580   
+	   4 Input    5 Bit        Muxes := 160   
+	   5 Input    5 Bit        Muxes := 25    
+	   2 Input    4 Bit        Muxes := 544   
+	   4 Input    4 Bit        Muxes := 8     
+	   3 Input    4 Bit        Muxes := 70    
+	  11 Input    3 Bit        Muxes := 23304 
+	   2 Input    3 Bit        Muxes := 28502 
+	   3 Input    3 Bit        Muxes := 422   
+	   4 Input    3 Bit        Muxes := 18    
+	   2 Input    2 Bit        Muxes := 2656  
+	   3 Input    2 Bit        Muxes := 59    
+	   2 Input    1 Bit        Muxes := 105   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1560 (col length:112)
+BRAMs: 6552 (col length: RAMB18 336 RAMB36 168)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port p_read[7] in module giveMeHoughCell__504 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[7] in module giveMeHoughCell__504 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[7] in module giveMeHoughCell__504 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read5[4] in module giveMeHoughCell__504 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read6[7] in module giveMeHoughCell__504 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[7] in module giveMeHoughCell__503 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[7] in module giveMeHoughCell__503 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[7] in module giveMeHoughCell__503 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read5[4] in module giveMeHoughCell__503 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read6[7] in module giveMeHoughCell__503 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[7] in module giveMeHoughCell__502 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[7] in module giveMeHoughCell__502 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[7] in module giveMeHoughCell__502 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read5[4] in module giveMeHoughCell__502 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read6[7] in module giveMeHoughCell__502 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[7] in module giveMeHoughCell__501 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[7] in module giveMeHoughCell__501 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[7] in module giveMeHoughCell__501 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read5[4] in module giveMeHoughCell__501 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read6[7] in module giveMeHoughCell__501 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[7] in module giveMeHoughCell__500 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[7] in module giveMeHoughCell__500 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[7] in module giveMeHoughCell__500 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read5[4] in module giveMeHoughCell__500 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read6[7] in module giveMeHoughCell__500 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[7] in module giveMeHoughCell__499 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[7] in module giveMeHoughCell__499 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[7] in module giveMeHoughCell__499 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read5[4] in module giveMeHoughCell__499 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read6[7] in module giveMeHoughCell__499 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[7] in module giveMeHoughCell__498 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[7] in module giveMeHoughCell__498 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[7] in module giveMeHoughCell__498 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read5[4] in module giveMeHoughCell__498 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read6[7] in module giveMeHoughCell__498 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[7] in module giveMeHoughCell__497 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[7] in module giveMeHoughCell__497 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[7] in module giveMeHoughCell__497 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read5[4] in module giveMeHoughCell__497 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read6[7] in module giveMeHoughCell__497 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[7] in module giveMeHoughCell__496 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[7] in module giveMeHoughCell__496 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[7] in module giveMeHoughCell__496 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read5[4] in module giveMeHoughCell__496 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read6[7] in module giveMeHoughCell__496 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[7] in module giveMeHoughCell__495 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[7] in module giveMeHoughCell__495 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[7] in module giveMeHoughCell__495 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read5[4] in module giveMeHoughCell__495 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read6[7] in module giveMeHoughCell__495 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[7] in module giveMeHoughCell__494 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[7] in module giveMeHoughCell__494 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[7] in module giveMeHoughCell__494 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read5[4] in module giveMeHoughCell__494 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read6[7] in module giveMeHoughCell__494 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[7] in module giveMeHoughCell__493 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[7] in module giveMeHoughCell__493 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[7] in module giveMeHoughCell__493 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read5[4] in module giveMeHoughCell__493 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read6[7] in module giveMeHoughCell__493 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[7] in module giveMeHoughCell__492 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[7] in module giveMeHoughCell__492 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[7] in module giveMeHoughCell__492 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read5[4] in module giveMeHoughCell__492 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read6[7] in module giveMeHoughCell__492 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[7] in module giveMeHoughCell__491 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[7] in module giveMeHoughCell__491 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[7] in module giveMeHoughCell__491 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read5[4] in module giveMeHoughCell__491 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read6[7] in module giveMeHoughCell__491 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[7] in module giveMeHoughCell__490 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[7] in module giveMeHoughCell__490 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[7] in module giveMeHoughCell__490 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read5[4] in module giveMeHoughCell__490 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read6[7] in module giveMeHoughCell__490 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[7] in module giveMeHoughCell__489 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[7] in module giveMeHoughCell__489 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[7] in module giveMeHoughCell__489 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read5[4] in module giveMeHoughCell__489 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read6[7] in module giveMeHoughCell__489 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[7] in module giveMeHoughCell__488 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[7] in module giveMeHoughCell__488 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[7] in module giveMeHoughCell__488 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read5[4] in module giveMeHoughCell__488 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read6[7] in module giveMeHoughCell__488 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[7] in module giveMeHoughCell__487 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[7] in module giveMeHoughCell__487 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[7] in module giveMeHoughCell__487 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read5[4] in module giveMeHoughCell__487 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read6[7] in module giveMeHoughCell__487 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[7] in module giveMeHoughCell__486 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[7] in module giveMeHoughCell__486 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[7] in module giveMeHoughCell__486 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read5[4] in module giveMeHoughCell__486 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read6[7] in module giveMeHoughCell__486 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[189] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[188] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[184] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[183] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[182] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[179] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[178] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[174] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[173] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[169] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[168] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[164] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[163] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[160] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[159] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[158] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[154] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[153] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[149] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[148] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[144] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[143] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[142] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[139] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[138] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[137] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[134] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[133] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[129] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[128] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[124] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[123] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[119] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[118] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[114] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[113] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[110] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[109] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[108] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[104] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[103] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[99] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[98] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[94] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[93] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[89] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[88] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[84] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[83] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[80] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[79] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[78] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[74] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[73] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[69] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[68] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[64] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[63] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[59] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[58] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[54] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[53] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[49] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[48] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[45] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[44] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[43] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[39] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[38] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[34] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[33] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[29] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[28] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[24] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[23] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[22] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[19] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[18] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[14] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[13] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[9] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[8] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[5] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[4] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[3] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM37 has port data3[0] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM40 has port data3[79] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM40 has port data3[78] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM40 has port data3[75] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM40 has port data3[74] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM40 has port data3[73] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM40 has port data3[69] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM40 has port data3[68] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM40 has port data3[64] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM40 has port data3[63] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM40 has port data3[59] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM40 has port data3[58] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM40 has port data3[54] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM40 has port data3[53] driven by constant 0
+WARNING: [Synth 8-3917] design giveMeWeightStereoSL__GBM40 has port data3[49] driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'add_ln209_1918_reg_238195_reg[7]' (FDRE) to 'add_ln209_1918_reg_238195_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\add_ln209_1918_reg_238195_reg[8] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:21:11 ; elapsed = 00:21:59 . Memory (MB): peak = 21615.555 ; gain = 17241.176 ; free physical = 42907 ; free virtual = 143510
+Synthesis current peak Physical Memory [PSS] (MB): peak = 28625.013; parent = 18428.692; children = 11752.631
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 50567.984; parent = 21615.559; children = 28952.426
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:22:46 ; elapsed = 00:23:41 . Memory (MB): peak = 21615.555 ; gain = 17241.176 ; free physical = 41844 ; free virtual = 142772
+Synthesis current peak Physical Memory [PSS] (MB): peak = 28625.013; parent = 18428.692; children = 11752.631
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 50567.984; parent = 21615.559; children = 28952.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:23:32 ; elapsed = 00:24:32 . Memory (MB): peak = 21627.480 ; gain = 17253.102 ; free physical = 41885 ; free virtual = 142910
+Synthesis current peak Physical Memory [PSS] (MB): peak = 28625.013; parent = 18428.692; children = 11752.631
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 50575.988; parent = 21623.566; children = 28952.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:24:10 ; elapsed = 00:25:12 . Memory (MB): peak = 21627.480 ; gain = 17253.102 ; free physical = 41663 ; free virtual = 142966
+Synthesis current peak Physical Memory [PSS] (MB): peak = 28625.013; parent = 18428.692; children = 11752.631
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 50575.988; parent = 21623.566; children = 28952.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:24:12 ; elapsed = 00:25:14 . Memory (MB): peak = 21627.480 ; gain = 17253.102 ; free physical = 41666 ; free virtual = 142969
+Synthesis current peak Physical Memory [PSS] (MB): peak = 28625.013; parent = 18428.692; children = 11752.631
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 50575.988; parent = 21623.566; children = 28952.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:24:16 ; elapsed = 00:25:19 . Memory (MB): peak = 21627.480 ; gain = 17253.102 ; free physical = 41686 ; free virtual = 142990
+Synthesis current peak Physical Memory [PSS] (MB): peak = 28625.013; parent = 18428.692; children = 11752.631
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 50575.988; parent = 21623.566; children = 28952.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:24:17 ; elapsed = 00:25:20 . Memory (MB): peak = 21627.480 ; gain = 17253.102 ; free physical = 41696 ; free virtual = 143000
+Synthesis current peak Physical Memory [PSS] (MB): peak = 28625.013; parent = 18428.692; children = 11752.631
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 50575.988; parent = 21623.566; children = 28952.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:24:35 ; elapsed = 00:25:40 . Memory (MB): peak = 21627.480 ; gain = 17253.102 ; free physical = 41672 ; free virtual = 142976
+Synthesis current peak Physical Memory [PSS] (MB): peak = 28625.013; parent = 18428.692; children = 11752.631
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 50575.988; parent = 21623.566; children = 28952.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:24:36 ; elapsed = 00:25:41 . Memory (MB): peak = 21627.480 ; gain = 17253.102 ; free physical = 41720 ; free virtual = 143025
+Synthesis current peak Physical Memory [PSS] (MB): peak = 28625.013; parent = 18428.692; children = 11752.631
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 50575.988; parent = 21623.566; children = 28952.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY8 | 13384|
+|3     |LUT1   |   258|
+|4     |LUT2   | 23797|
+|5     |LUT3   | 43459|
+|6     |LUT4   | 56018|
+|7     |LUT5   | 15549|
+|8     |LUT6   | 66319|
+|9     |FDRE   | 11496|
+|10    |IBUF   |   633|
+|11    |OBUF   | 25924|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+-------+
+|      |Instance |Module |Cells  |
++------+---------+-------+-------+
+|1     |top      |       | 256838|
++------+---------+-------+-------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:24:37 ; elapsed = 00:25:42 . Memory (MB): peak = 21627.480 ; gain = 17253.102 ; free physical = 41656 ; free virtual = 142961
+Synthesis current peak Physical Memory [PSS] (MB): peak = 28625.013; parent = 18428.692; children = 11752.631
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 50575.988; parent = 21623.566; children = 28952.426
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 640 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:24:40 ; elapsed = 00:25:48 . Memory (MB): peak = 21627.480 ; gain = 17253.102 ; free physical = 52158 ; free virtual = 153464
+Synthesis Optimization Complete : Time (s): cpu = 00:24:40 ; elapsed = 00:25:49 . Memory (MB): peak = 21627.480 ; gain = 17253.102 ; free physical = 52284 ; free virtual = 153464
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 21627.480 ; gain = 0.000 ; free physical = 52206 ; free virtual = 153386
+INFO: [Netlist 29-17] Analyzing 14018 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'giveMeHoughMap' is not ideal for floorplanning, since the cellview 'giveMeHoughMap' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 21663.578 ; gain = 0.000 ; free physical = 52218 ; free virtual = 153389
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 634 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 633 instances
+
+Synth Design complete, checksum: 5b50a7f5
+INFO: [Common 17-83] Releasing license: Synthesis
+133 Infos, 201 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:25:40 ; elapsed = 00:26:40 . Memory (MB): peak = 21663.578 ; gain = 17320.188 ; free physical = 52706 ; free virtual = 153877
+INFO: [Common 17-1381] The checkpoint '/home/ubhks/masterarbeit_ubhks/git_work/Old_Hough/Old_Hough.runs/synth_1/giveMeHoughMap.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:48 ; elapsed = 00:00:42 . Memory (MB): peak = 21735.613 ; gain = 72.035 ; free physical = 52466 ; free virtual = 153818
+INFO: [runtcl-4] Executing : report_utilization -file giveMeHoughMap_utilization_synth.rpt -pb giveMeHoughMap_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 14 15:47:57 2023...

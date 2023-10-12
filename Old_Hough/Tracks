@@ -1,0 +1,39 @@
+Track 1
+SL0
+ID = 151	; SL ID = 151
+SL1
+ID = 305	; SL ID = 145
+SL2
+ID = 502	; SL ID = 182
+SL3
+ID = 730	; SL ID = 218
+SL4
+ID = 980	; SL ID = 244
+SL5
+ID = 1263	; SL ID = 271
+SL6 
+ID = -		; SL ID = -
+SL7
+ID = 1944 	; SL ID = 344
+SL8
+ID = 2322	; LS ID = 370
+
+Track 2
+SL0
+ID = -		; SL ID = -
+SL1
+ID = -		; SL ID = -
+SL2
+ID = 502	; SL ID = 182
+SL3
+ID = 730	; SL ID = 218
+SL4
+ID = 980	; SL ID = 244
+SL5
+ID = 1263	; SL ID = 271
+SL6 
+ID = 1587	; SL ID = 307
+SL7
+ID = 1944 	; SL ID = 344
+SL8
+ID = 2322	; LS ID = 370

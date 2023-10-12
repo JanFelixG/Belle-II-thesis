@@ -1,0 +1,22 @@
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot hough_sim1_behav xil_defaultlib.hough_sim1 -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.std_logic_textio
+Compiling architecture behav of entity xil_defaultlib.giveMeHoughCell [givemehoughcell_default]
+Compiling architecture behav of entity xil_defaultlib.giveMeWeightStereoSL [givemeweightstereosl_default]
+Compiling architecture behav of entity xil_defaultlib.giveMeWeightAxialSL [givemeweightaxialsl_default]
+Compiling architecture behav of entity xil_defaultlib.giveMeHoughMap [givemehoughmap_default]
+Compiling architecture sim of entity xil_defaultlib.hough_sim1
+Built simulation snapshot hough_sim1_behav
